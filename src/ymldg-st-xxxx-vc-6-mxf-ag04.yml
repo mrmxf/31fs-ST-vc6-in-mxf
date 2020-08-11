@@ -1,0 +1,65 @@
+# Title: imf-reg-api
+# Author: Bruce Devlin
+# Defaults: DOCX (smpte)
+
+# all file paths are relative to the root folder of the project
+# change this at your peril - the scripts might stop working
+
+# metadata:
+#   mustache:
+#     - src/x-meta-LM-control-doc
+
+from: markdown
+to: docx
+
+reference-doc: x-r/refdoc/refdoc-smpte-root.docx
+
+output-file:  docs/31FS-WD-ST-xxxx-VC-6-in-MXF-(r0-draft).docx
+input-files:
+  - src/st-xxxx-000-title-block-draft.md
+  - x-r/boilerplate/smpte/inc-draft-st-002-foreword.md
+  - x-r/boilerplate/smpte/inc-draft-st-004-introduction.md
+  - src/st-xxxx-005-introduction.md
+  - x-r/boilerplate/smpte/inc-draft-st-006-ipr-statement.md
+  - x-r/boilerplate/smpte/inc-draft-st-009-hint-scope.md
+  - src/st-xxxx-010-scope.md
+  - x-r/boilerplate/smpte/inc-draft-st-019-hint-normative-references.md
+  - src/st-xxxx-020-normative-references.md
+  - x-r/boilerplate/smpte/inc-draft-st-029-hint-terms-and-definitions.md
+  - src/st-xxxx-030-terms-definitions.md
+  - src/st-xxxx-040-MXF File Structure and Mapping.md
+  - src/st-xxxx-050-Mapping-VC-6-bytestream.md
+  - x-r/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
+
+#template: letter
+standalone: true
+self-contained: true
+
+# This variable is passed to filters
+variables:
+  organisation: SMPTE
+
+# ERROR, WARNING, or INFO
+verbosity: INFO
+#log-file: log.json
+
+#pdf-engine: pdflatex
+#pdf-engine-opts:
+#- "-shell-escape"
+# you may also use pdf-engine-opt: with a single option
+# pdf-engine-opt: "-shell-escape"
+
+table-of-contents: false
+toc-depth: 2
+#SMPTE numbering is done with a filter to follow ISO rules
+number-sections: false
+
+#reference-links: true
+# block, section, or document
+#reference-location: block
+#atx-headers: false
+
+fail-if-warnings: false
+dump-args: false
+ignore-args: false
+trace: false
