@@ -5,14 +5,14 @@
 # all file paths are relative to the root folder of the project
 # change this at your peril - the scripts might stop working
 
-# metadata:
-#   mustache:
-#     - src/x-meta-LM-control-doc
+metadata:
+  mustache:
+    - src/zmetadata-VC-6-mxf.json
 
 from: markdown
 to: docx
 
-reference-doc: x-r/refdoc/refdoc-smpte-root.docx
+reference-doc: x-r/refdoc/refdoc-smpte-eng.docx
 
 output-file:  docs/31FS-WD-ST-xxxx-VC-6-in-MXF-(r0-draft).docx
 input-files:

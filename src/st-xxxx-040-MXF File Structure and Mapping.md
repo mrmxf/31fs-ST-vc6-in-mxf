@@ -7,24 +7,9 @@ SMPTE ST-2117-1, MXF files specified by this document shall have one of the two 
 **BPP** is an abbreviation for Body Partition Pack and
 **FPP** is a shorthand for Footer Partition Pack.
 
-![Figure 1 - Single Essence Location Style]
+![Figure 1 - Single Essence Location Style](src/st-xxxx-WD-figure-01.svg)
 
-![Figure 2 - Multiple Essence Location Style]
-
-The constraints in Table 1 shall be used in files complying with this document.
-
-[Table 1 - Constraints of SMPTE RP xxxx Streams]{custom-class="smpte-table-caption"}
-
-| Item                | Constraints                    |
-| :------------------ | :----------------------------- |
-| Operational Pattern | 1a
-| Wrapping            | Frame wrapped SMPTE ST 2117-1, byte stream
-| KAG size            | 1
-| System Item         | [If present]{custome-style="smpte-ch-review-highlight"} [Compliant to SMPTE ST 326 and SMPTE ST 385, includes the Frame by Frame Timecode and UMID{custome-style="smpte-ch-review-highlight"}
-| Audio source        | 48 kHz locked to Video
-| Audio mapping       | [Compliant to SMPTE ST 382, AES3, 1ch/Element (min 2 to max 16 channels)]{custome-style="smpte-ch-review-highlight"}
-| Data Item           | If present, Compliant to SMPTE ST 436-1
-| Timecode            | System Item and Header Metadata
+![Figure 2 - Multiple Essence Location Style](src/st-xxxx-WD-figure-02.svg)
 
 Detailed constraints are listed in Annex B Constraints of a Conformant Implementation.
 
