@@ -8,7 +8,7 @@
 
 metadata:
   mustache:
-    - src/zmetadata-VC-6-mxf.json
+    - src-rp-usage/zmetadata-VC-6-mxf.json
 
 from: markdown
 to: docx
@@ -17,19 +17,19 @@ reference-doc: x-r/refdoc/refdoc-smpte-eng.docx
 
 output-file:  docs/31FS-WD-ST-xxxx-VC-6-in-MXF-(r0-draft).docx
 input-files:
-  - src/st-xxxx-000-title-block-draft.md
+  - src-rp-usage/st-xxxx-000-title-block-draft.md
   - x-r/boilerplate/smpte/inc-draft-st-002-foreword.md
   - x-r/boilerplate/smpte/inc-draft-st-004-introduction.md
-  - src/st-xxxx-005-introduction.md
+  - src-rp-usage/st-xxxx-005-introduction.md
   - x-r/boilerplate/smpte/inc-draft-st-006-ipr-statement.md
   - x-r/boilerplate/smpte/inc-draft-st-009-hint-scope.md
-  - src/st-xxxx-010-scope.md
+  - src-rp-usage/st-xxxx-010-scope.md
   - x-r/boilerplate/smpte/inc-draft-st-019-hint-normative-references.md
-  - src/st-xxxx-020-normative-references.md
+  - src-rp-usage/st-xxxx-020-normative-references.md
   - x-r/boilerplate/smpte/inc-draft-st-029-hint-terms-and-definitions.md
-  - src/st-xxxx-030-terms-definitions.md
-  - src/st-xxxx-040-MXF File Structure and Mapping.md
-  - src/st-xxxx-050-Mapping-VC-6-bytestream.md
+  - src-rp-usage/st-xxxx-030-terms-definitions.md
+  - src-rp-usage/st-xxxx-040-MXF File Structure and Mapping.md
+  - src-rp-usage/st-xxxx-050-Mapping-VC-6-bytestream.md
   - x-r/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
 # paths to search for images
 resource-path: [".", "src", "x-r/boilerplate/smpte"]

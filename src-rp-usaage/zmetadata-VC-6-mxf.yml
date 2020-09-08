@@ -1,0 +1,44 @@
+# YAML metadata for all versions of this document
+#
+# Metadata for generic title block
+
+# Authors & affiliations
+author:
+    - Bruce Devlin
+affiliation:
+    - V-Nova
+# The version of the document
+version: "0.1"
+
+# The SMPTE metadata for an official document
+smpte:
+  # Metadata for management
+  TC: TC-31FS
+  group:
+    name: DG-VC-6-MXF
+    chair: TBD
+    editor: Bruce Devlin
+  # Document metadata
+  type:
+    # ST, ST (Revision), RP or RP (Revision), RDD, RDD (Revision), EG, EG (Revision)
+    short: ST
+    long: SMPTE STANDARD
+  number: xxxx
+  year: 202x
+  part: " "
+  element: " "
+    # built from the other components <.type.short> <.number>-<.part><.element>:<.year>
+  reference: ST xxxx:202x
+  # WD, CD, Public CD, FCD, or DP
+  state: WD
+  title: Mapping VC-6 into the MXF Generic Container
+  date: 2020-08-11
+  year: 2020
+  note: r1-draft
+  # List of topics being revised in this document
+  revision_topics_list: " "
+
+# the title of the html tab/page
+title: VC-6 in MXF
+
+
