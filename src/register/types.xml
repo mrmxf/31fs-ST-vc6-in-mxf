@@ -1,0 +1,45 @@
+<!-- Metadata tags to support XML file editing -->
+<!-- author= Tatsuji Yamazaki (Tatsuji.Yamazaki@sony.com) -->
+<!-- summary_of_edit= Types Register for ST 381-5 -->
+<!--  -->
+<!-- DO NOT EDIT THIS TAG -->
+<!-- master_commit_tag=v000000081 -->
+<!-- DO NOT EDIT THIS TAG -->
+<!--  -->
+<TypesRegister xmlns="http://www.smpte-ra.org/schemas/2003/2012">
+    <Entries>
+        <Entry>
+            <Register>Types</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/2003/2012</NamespaceName>
+            <Symbol>HEVCCodedContentType</Symbol>
+            <UL>urn:smpte:ul:060e2b34.01040101.02010133.00000000</UL>
+            <Kind>LEAF</Kind>
+            <Name>HEVCCodedContentType</Name>
+            <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+            <ContextScope>UnknownContext</ContextScope>
+            <TypeKind>Enumeration</TypeKind>
+            <BaseType>urn:smpte:ul:060e2b34.01040101.01010100.00000000</BaseType>
+            <Facets>
+                <Facet>
+                    <Symbol>HEVCCodedContent_NotKnown</Symbol>
+                    <Name>HEVCCodedContent_NotKnown</Name>
+                    <Value>0</Value>
+                    <IsDeprecated>false</IsDeprecated>
+                </Facet>
+                <Facet>
+                    <Symbol>HEVCCodedContent_ProgressiveFramePicture</Symbol>
+                    <Name>HEVCCodedContent_ProgressiveFramePicture</Name>
+                    <Value>1</Value>
+                    <IsDeprecated>false</IsDeprecated>
+                </Facet>
+                <Facet>
+                    <Symbol>HEVCCodedContent_InterlacedFieldPicture</Symbol>
+                    <Name>HEVCCodedContent_InterlacedFieldPicture</Name>
+                    <Value>2</Value>
+                    <IsDeprecated>false</IsDeprecated>
+                </Facet>
+            </Facets>
+        </Entry>
+    </Entries>
+</TypesRegister>

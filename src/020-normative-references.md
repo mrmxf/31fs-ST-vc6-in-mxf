@@ -2,9 +2,7 @@ SMPTE ST 326:2000, Television — SDTI Content Package Format (SDTI-CP)
 
 SMPTE ST 331:2011, Element and Metadata Definitions for the SDTI-CP
 
-SMPTE ST 377-1:2011, Material Exchange Format (MXF) — File Format Specification
-
-Amendment 2:2012 to SMPTE ST 377-1:2011
+SMPTE ST 377-1:2019, Material Exchange Format (MXF) — File Format Specification
 
 SMPTE ST 378:2004, Television — Material Exchange Format (MXF) — Operational pattern 1A (Single Item, Single Package)
 

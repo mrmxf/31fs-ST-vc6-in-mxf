@@ -1,0 +1,18 @@
+<!-- Metadata tags to support XML file editing -->
+<!-- author= Bruce Devlin (bruce@mrmxf.com) -->
+<!-- summary_of_edit= Elements Register for ST 381-5 -->
+
+<ElementsRegister xmlns="http://www.smpte-ra.org/schemas/335/2012">
+    <Entries>
+        <Entry>
+            <Register>Elements</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+            <Symbol>HEVCParameters</Symbol>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02000000</UL>
+            <Kind>NODE</Kind>
+            <Name>HEVC Parameters</Name>
+            <Definition>Parameters about HEVC Picture Coding</Definition>
+            <IsDeprecated>false</IsDeprecated>
+        </Entry>
+    </Entries>
+</ElementsRegister>
