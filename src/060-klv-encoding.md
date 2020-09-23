@@ -4,19 +4,26 @@
 
 ### SMPTE ST-2117 Picture Element Key
 
-[Table 1]{custom-style=smpte-caption-table}
+[Table 1 - Picture Element Keys]{custom-style="smpte-caption-table"}
 
-| Item Name                         | Symbol                        | Kind | Item UL
-|-----------------------------------|-------------------------------|------|---------------------------------------------------
-| Frame Wrapped VC6 Picture Element | FrameWrappedVC6PictureElement | LEAF | `urn:smpte:ul:060E2B34.01020101.0D010301.15kk05nn`
+| Symbol                        | Kind | Item UL
+|-------------------------------|------|---------------------------------------------------
+| FrameWrappedVC6PictureElement | {{FrameWrappedVC6PictureElement.Kind}} | {{FrameWrappedVC6PictureElement.UL}}
 
-The parameter `kk` specifies the count of Picture Elements in the Picture Item, and `nn` indicates the index number of the Element.
-For VC-6 mappings `kk` should have the value `01` and `nn` should have the value `01`.
+Bytes 1-13 of the `FrameWrappedVC6PictureElement` key are defined by SMPTE ST 379-2.
+
+The value `7f` in byte 14 of Table 1 is a placeholder for the Essence element count
+in the Picture Item as defined by SMPTE ST 379-2.
+For VC-6 mappings this shall have the value `01`.
+
+NOTE: The value `7f` in byte 16 is a placeholder for the Essence element number
+of the Element within the Picture Item starting at `01` as defined by SMPTE ST 379-2.
+For VC-6 mappings this shall have the value `01`.
 
 ### SMPTE ST-2117 Picture Element Length
 
-The length field of the KLV coded Element shall be 4 bytes BER long-form encoded (i.e. `83h.xx.yy.zz`).
+The length field of the KLV coded Element shall shall comply with SMPTE ST 379-2.
 
 ### SMPTE ST-2117 Picture Element Value
 
-Each Picture Element shall be a byte stream for a single image compliant with SMPTE ST-2117-1.
+Each Picture Element value shall be a byte stream for a single image compliant with SMPTE ST-2117-1.

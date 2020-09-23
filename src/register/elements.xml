@@ -7,7 +7,7 @@
         <Entry>
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-            <Symbol>HEVCParameters</Symbol>
+            <Symbol>VC6Parameters</Symbol>
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02000000</UL>
             <Kind>NODE</Kind>
             <Name>HEVC Parameters</Name>

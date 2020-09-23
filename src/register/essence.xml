@@ -1,0 +1,15 @@
+<EssenceRegister xmlns="http://www.smpte-ra.org/schemas/2088/2019">
+    <Entries>
+        <Entry>
+            <Register>Essence</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/2088/2019</NamespaceName>
+            <Symbol>FrameWrappedVC6PictureElement</Symbol>
+            <UL>urn:smpte:ul:060E2B34.01020101.0D010301.157f1f7f</UL>
+            <Kind>LEAF</Kind>
+            <Name>Frame Wrapped VC-6 Picture Element</Name>
+            <Definition>Identifies a frame wrapped Picture Element bytestream conforming to ST 2117-1</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+        </Entry>
+    </Entries>
+</EssenceRegister>

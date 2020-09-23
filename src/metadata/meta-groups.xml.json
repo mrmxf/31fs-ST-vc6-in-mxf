@@ -1,0 +1,212 @@
+{
+  "HEVCSubDescriptor": {
+    "Register": "Groups",
+    "NamespaceName": "http://www.smpte-ra.org/reg/395/2014/13/1/aaf",
+    "Symbol": "HEVCSubDescriptor",
+    "UL": "urn:smpte:ul:060e2b34.027f0101.0d010101.01018101",
+    "Kind": "LEAF",
+    "Name": "HEVC Sub-Descriptor",
+    "Definition": "HEVC Sub-Descriptor",
+    "DefiningDocument": "SMPTE ST 381-5",
+    "IsDeprecated": "false",
+    "Parent": "urn:smpte:ul:060e2b34.027f0101.0d010101.01015900",
+    "IsConcrete": "true",
+    "KLVSyntax": "06 53",
+    "Contents": {
+      "Record": [
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02030000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02040000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02060000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02070000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02080000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02090000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.020a0000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.020b0000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.020c0000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.020d0000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.020e0000"
+          ],
+          "IsOptional": [
+            "false"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.020f0000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02100000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02110000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02120000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02130000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02140000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02150000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02160000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02170000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02180000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.02190000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.021a0000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        },
+        {
+          "UL": [
+            "urn:smpte:ul:060e2b34.0101010e.04010606.021b0000"
+          ],
+          "IsOptional": [
+            "true"
+          ]
+        }
+      ]
+    }
+  }
+}

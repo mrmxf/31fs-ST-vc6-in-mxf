@@ -1,0 +1,13 @@
+{
+  "FrameWrappedVC6PictureElement": {
+    "Register": "Essence",
+    "NamespaceName": "http://www.smpte-ra.org/reg/2088/2019",
+    "Symbol": "FrameWrappedVC6PictureElement",
+    "UL": "urn:smpte:ul:060E2B34.01020101.0D010301.157f1f7f",
+    "Kind": "LEAF",
+    "Name": "Frame Wrapped VC-6 Picture Element",
+    "Definition": "Identifies a frame wrapped Picture Element bytestream conforming to ST 2117-1",
+    "DefiningDocument": "SMPTE ST 2117-10",
+    "IsDeprecated": "false"
+  }
+}

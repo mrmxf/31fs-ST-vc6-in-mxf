@@ -1,24 +1,86 @@
 <!-- Metadata tags to support XML file editing -->
-<!-- author= Tatsuji Yamazaki (Tatsuji.Yamazaki@sony.com) -->
-<!-- summary_of_edit= Labels Register for ST 381-5 -->
-<!--  -->
-<!-- DO NOT EDIT THIS TAG -->
-<!-- master_commit_tag=v000000081 -->
-<!-- DO NOT EDIT THIS TAG -->
-<!--  -->
+<!-- author= Bruce Devlin (bruce@mrmxf.com) -->
+<!-- summary_of_edit= Labels Register for ST 2117-10 -->
 <LabelsRegister xmlns="http://www.smpte-ra.org/schemas/400/2012">
     <Entries>
+        <!-- Essence Container Labels -->
         <Entry>
             <Register>Labels</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
-            <Symbol>H265HEVCVideo</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0401010d.04010202.01400000</UL>
+            <Symbol>MXFGCVC6Bytestreams</Symbol>
+            <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210000</UL>
             <Kind>NODE</Kind>
-            <Name>H.265/HEVC Video</Name>
-            <Definition>Identifies H.265/HEVC Video</Definition>
-            <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+            <Name>MXF-GC VC-6 Bytestreams</Name>
+            <Definition>Identifies VC-6 Bytestreams in MXF</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
-
+        <Entry>
+            <Register>Labels</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+            <Symbol>MXFGCVC6FrameWrappedGenericBytestream</Symbol>
+            <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210100</UL>
+            <Kind>LEAF</Kind>
+            <Name>VC6 Frame Wrapped Generic Bytestream</Name>
+            <Definition>Identifies VC-6 Frame Wrapped Generic Bytestreams in MXF</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+        </Entry>
+        <Entry>
+            <Register>Labels</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+            <Symbol>MXFGCVC6FrameWrappedProgressivePictures</Symbol>
+            <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210200</UL>
+            <Kind>LEAF</Kind>
+            <Name>VC6 Frame Wrapped Progressive Pictures</Name>
+            <Definition>Identifies VC-6 Bytestreams of Progressive Pictures in MXF</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+        </Entry>
+        <Entry>
+            <Register>Labels</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+            <Symbol>MXFGCVC6FrameWrappedInterlacedPictures</Symbol>
+            <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210300</UL>
+            <Kind>LEAF</Kind>
+            <Name>VC6 Frame Wrapped Interlaced Pictures</Name>
+            <Definition>Identifies VC-6 Bytestreams of Interlaced Pictures in MXF</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+        </Entry>
+        <!-- Picture Essence Coding Labels -->
+        <Entry>
+            <Register>Labels</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+            <Symbol>VC6Bytestreams</Symbol>
+            <UL>urn:smpte:ul:060e2b34.0401010d.04010202.01470000</UL>
+            <Kind>NODE</Kind>
+            <Name>VC-6 Bytestreams</Name>
+            <Definition>Identifies VC-6 Picture Coding Bytestreams</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+        </Entry>
+        <Entry>
+            <Register>Labels</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+            <Symbol>VC6UnrestrictedBytestream</Symbol>
+            <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210100</UL>
+            <Kind>LEAF</Kind>
+            <Name>VC-6 Unrestricted Bytestream</Name>
+            <Definition>Identifies a VC-6 Bytestream with no constraints</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+        </Entry>
+        <Entry>
+            <Register>Labels</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
+            <Symbol>VC6ConstrainedBySomeMagic</Symbol>
+            <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210100</UL>
+            <Kind>LEAF</Kind>
+            <Name>VC-6 Constrained By Some Magic</Name>
+            <Definition>Identifies a VC-6 Bytestream constrained to some undefined profile or level</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+        </Entry>
     </Entries>
 </LabelsRegister>

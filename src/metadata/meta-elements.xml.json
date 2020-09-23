@@ -1,0 +1,12 @@
+{
+  "VC6Parameters": {
+    "Register": "Elements",
+    "NamespaceName": "http://www.smpte-ra.org/reg/335/2012",
+    "Symbol": "VC6Parameters",
+    "UL": "urn:smpte:ul:060e2b34.0101010e.04010606.02000000",
+    "Kind": "NODE",
+    "Name": "HEVC Parameters",
+    "Definition": "Parameters about HEVC Picture Coding",
+    "IsDeprecated": "false"
+  }
+}

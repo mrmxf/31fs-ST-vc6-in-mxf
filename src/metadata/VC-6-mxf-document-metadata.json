@@ -5,23 +5,24 @@
   "affiliation": [
     "V-Nova"
   ],
-  "version": "0.1",
+  "role":"Document Editor",
+  "version": "r1",
   "smpte": {
     "TC": "TC-31FS",
     "group": {
       "name": "DG-VC-6-MXF",
-      "chair": "TBD",
+      "chair": "Bruce Devlin",
       "editor": "Bruce Devlin"
     },
     "type": {
       "short": "ST",
       "long": "SMPTE STANDARD"
     },
-    "number": "xxxx",
+    "number": "2117",
     "year": "202x",
-    "part": " ",
-    "element": " ",
-    "reference": "ST xxxx:202x",
+    "part": "10",
+    "element": "",
+    "reference": "ST 2117-10:202x",
     "state": "WD",
     "title": "Mapping VC-6 into the MXF Generic Container",
     "date": "2020-08-11T00:00:00.000Z",
