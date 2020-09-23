@@ -41,6 +41,8 @@ input-files:
   - src/050-Mapping-VC-6-bytestream.md
   - src/060-klv-encoding.md
   - src/070-labels.md
+  - src/080-essence-descriptor.md
+  - src/090-application-issues.md
 
   - x-r/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
 # paths to search for images

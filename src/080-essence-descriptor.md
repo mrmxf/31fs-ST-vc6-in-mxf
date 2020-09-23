@@ -3,11 +3,10 @@
 [
 For the VC-6 wrapping, the VC-6 Sub Descriptor, which is strongly referenced from the CDCI Descriptor or the RGBA Descriptor, should be used.
 The VC-6 Sub Descriptor consists of the VC-6 specific properties as shown in Table 4.
-]{custome-style="smpte-ch-highlight"}
+]{custom-style="smpte-ch-highlight"}
 
-[NOTE:]{custome-style="smpte-ch-highlight"}
-[ FYI HEVC promotes these properties to the MXF Layer
-]{custome-style="smpte-ch-highlight"}
+[NOTE:]{custom-style="smpte-ch-highlight"}
+[ FYI HEVC promotes these properties to the MXF Layer ]{custom-style="smpte-ch-highlight"}
 
 | HEVC Sub Descriptor              |
 | ---------------------------------|
