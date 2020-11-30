@@ -10,8 +10,8 @@
             <Symbol>VC6Parameters</Symbol>
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02000000</UL>
             <Kind>NODE</Kind>
-            <Name>HEVC Parameters</Name>
-            <Definition>Parameters about HEVC Picture Coding</Definition>
+            <Name>VC6 Parameters</Name>
+            <Definition>Parameters about VC6 Picture Coding</Definition>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
     </Entries>

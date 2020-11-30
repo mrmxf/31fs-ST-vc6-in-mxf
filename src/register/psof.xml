@@ -1,0 +1,16 @@
+<!-- Per Sequence of Frames Metadata -->
+<!-- TimelineTrack/TrackSegment/Sequence/SourceClip/ -->
+<rNEW:ST-2117ClipSubDescriptor>
+    <rNew:ST-2117Version></rNew:ST-2117Version>    <!-- Uint8  -->
+    <rNew:Upsampler></rNew:Upsampler>    <!-- Uint8  -->
+    <rNew:ShortcutVector></rNew:ShortcutVector>    <!-- Uint16  -->
+    <rNew:TableauMetadata></rNew:TableauMetadata>    <!-- Boolean -->
+    <rNew:HeaderMetadata></rNew:HeaderMetadata>    <!-- Boolean -->
+    <rNEW:EchelonPlaneList>
+        <rNew:Plane>
+            <rNew:PlaneIndex></rNew:PlaneIndex>            <!-- Is there already a Type for this,
+					if not, it could be name / index lookup defined per file -->
+            <rNew:NoOfEchelons></rNew:NoOfEchelons>            <!-- Uint8  -->
+        </rNew:Plane>
+    </rNEW:EchelonPlaneList>
+</rNEW:ST-2117ClipSubDescriptor>

@@ -1,0 +1,35 @@
+<!-- Per File Metadata -->
+<rNEW:ST-2117SubDescriptor>
+    <!-- List of Upsamplers used within the file,
+		in a growing file, this may be a growing list,
+		or fixed at startup depending on the Encoder -->
+    <rNEW:UpsamplerList>
+        <rNEW:Upsampler></rNEW:Upsampler>        <!-- Uint8  -->
+        <rNEW:Upsampler></rNEW:Upsampler>        <!-- Uint8  -->
+    </rNEW:UpsamplerList>
+
+    <rNEW:FixedUpsampler>2</rNEW:FixedUpsampler> <!-- see standard for index or not -->
+
+    <!-- List of Shortcut Bit Vectors used within the file, in a growing file, this may be a growing list -->
+    <rNEW:ShortcutVectorList>
+        <rNEW:ShortcutVector></rNEW:ShortcutVector>        <!-- Uint16  -->
+        <rNEW:ShortcutVector></rNEW:ShortcutVector>        <!-- Uint16  -->
+    </rNEW:ShortcutVectorList>
+
+    <!-- is Lossless VBR Mode  -->
+    <rNEW:Lossless></rNEW:Lossless>    <!-- Boolean 0 / (not 0)-->
+    <!-- is Constant Bit Rate -->
+    <rNEW:CBR></rNEW:CBR>    <!-- Boolean -->
+    <!-- Number of Bytes per Frame if CBR == True -->
+    <rNEW:FrameCompressedSize></rNEW:FrameCompressedSize>    <!-- Type as defined elsewhere  -->
+    <!-- No of LoQs -->
+    <rNEW:MaxNoOfEchelons></rNEW:MaxNoOfEchelons>    <!-- Uint8  -->
+    <rNEW:EchelonList>
+        <!-- For LoQ Each -->
+        <rNEW:Echelon>
+            <rNEW:EchelonNumber></rNEW:EchelonNumber>            <!-- Uint8  -->
+            <r1:SampledHeight></r1:SampledHeight>            <!-- Type as defined elsewhere  -->
+            <r1:SampledWidth></r1:SampledWidth>            <!-- Type as defined elsewhere  -->
+        </rNEW:Echelon>
+    </rNEW:EchelonList>
+</rNew:ST-2117SubDescriptor>
