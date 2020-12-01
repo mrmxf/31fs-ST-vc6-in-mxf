@@ -10,8 +10,8 @@ z-*.*
 ~*.*
 
 #ignore the external resources folder by default
-/x-r/**
-/xr/**
+x-r/**
+xr/**
 
 # ignore any secrets in environment variables
 .env
