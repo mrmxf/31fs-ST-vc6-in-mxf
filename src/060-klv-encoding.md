@@ -4,7 +4,11 @@
 
 ### SMPTE ST-2117 Picture Element Key
 
-[Table 1 - Picture Element Keys]{custom-style="smpte-caption-table"}
+::: {custom-style="smpte-caption"}
+
+Table 1 - Picture Element Keys]
+
+:::
 
 | Symbol                        | Kind | Item UL
 |-------------------------------|------|---------------------------------------------------

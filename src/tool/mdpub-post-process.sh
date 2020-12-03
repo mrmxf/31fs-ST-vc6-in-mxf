@@ -3,11 +3,15 @@
 #
 SCRIPTPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 #
-# zip up the XML submission elements to the default output folder (x-r/_SETTINGS) with the right name
-zip --update --junk-paths $OUTPUT_FOLDER/${DOC_PREFIX}a-register-submission-$DOC_DATE.zip src/register/*.xml
+# zip up the XML submission elements to the default output folder (xr/_SETTINGS) with the right name
+DST="$OUTPUT_FOLDER/${DOC_PREFIX}a-register-submission-$MDPUB_DATE.zip"
+echo -e "$EKO zipping xml into$Cfile $DST"
+zip --update --junk-paths "$DST" src/register/*.xml
 #
 # rename each file output to the right filename - from the config file
-SRC="$OUTPUT_FOLDER/pandoc-ag04-output.docx"
+SRC="$OUTPUT_FOLDER/$DOC_SOURCE_NAME.$DOC_SOURCE_EXT"
 if [ -e "$SRC" ] ; then
-  mv  "$SRC" "$OUTPUT_FOLDER/${DOC_PREFIX}-${DOC_TITLE}-${DOC_DATE}(${DOC_COMMENT}).docx"
+  DST="$OUTPUT_FOLDER/${DOC_PREFIX}-${DOC_TITLE}-${MDPUB_DATE}(${DOC_COMMENT}).$DOC_SOURCE_EXT"
+  mv  "$SRC" "$DST"
+  echo -e "$EKO created$Cfile $DST"
 fi

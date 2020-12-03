@@ -13,31 +13,31 @@ metadata:
 from: markdown
 to: docx
 
-reference-doc: x-r/refdoc/refdoc-smpte-eng.docx
+reference-doc: xr/refdoc/refdoc-smpte-ag04.docx
 
 output-file:  docs/31FS-WD-ST-xxxx-VC-6-in-MXF-(r0-draft).docx
 input-files:
   - src-rp-usage/st-xxxx-000-title-block-draft.md
-  - x-r/boilerplate/smpte/inc-draft-st-002-foreword.md
-  - x-r/boilerplate/smpte/inc-draft-st-004-introduction.md
+  - xr/boilerplate/smpte/inc-draft-st-002-foreword.md
+  - xr/boilerplate/smpte/inc-draft-st-004-introduction.md
   - src-rp-usage/st-xxxx-005-introduction.md
-  - x-r/boilerplate/smpte/inc-draft-st-006-ipr-statement.md
-  - x-r/boilerplate/smpte/inc-draft-st-009-hint-scope.md
+  - xr/boilerplate/smpte/inc-draft-st-006-ipr-statement.md
+  - xr/boilerplate/smpte/inc-draft-st-009-hint-scope.md
   - src-rp-usage/st-xxxx-010-scope.md
-  - x-r/boilerplate/smpte/inc-draft-st-019-hint-normative-references.md
+  - xr/boilerplate/smpte/inc-draft-st-019-hint-normative-references.md
   - src-rp-usage/st-xxxx-020-normative-references.md
-  - x-r/boilerplate/smpte/inc-draft-st-029-hint-terms-and-definitions.md
+  - xr/boilerplate/smpte/inc-draft-st-029-hint-terms-and-definitions.md
   - src-rp-usage/st-xxxx-030-terms-definitions.md
   - src-rp-usage/st-xxxx-040-MXF File Structure and Mapping.md
   - src-rp-usage/st-xxxx-050-Mapping-VC-6-bytestream.md
-  - x-r/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
+  - xr/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
 # paths to search for images
-resource-path: [".", "src", "x-r/boilerplate/smpte"]
+resource-path: [".", "src", "xr/boilerplate/smpte"]
 
 # filters are needed for this document
 filters:
-  - x-r/filter/lustache-doc.lua
-  - x-r/filter/smpte-st-numbering.lua
+  - xr/filter/lustache-doc.lua
+  - xr/filter/smpte-st-numbering.lua
 
 #template: letter
 standalone: true

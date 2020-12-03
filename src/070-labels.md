@@ -7,7 +7,7 @@ of the Partition Packs, Preface Set and File Descriptor as define in SMPTE ST 37
 
 The values of the Essence Container Label for VC-6 Bytestreams in MXF shall be one of the values in Table 2.
 
-[Table 2 – Essence Container Label Values for VC-6]{custom-style="smpte-caption-table"}
+[Table 2 – Essence Container Label Values for VC-6]{custom-style="smpte-caption-figure"}
 
 | Symbol                                  | Kind                                             | Item UL
 |-----------------------------------------|------------------------------------------------- |---------------------------------------------------
@@ -24,7 +24,7 @@ nor `VC6FrameWrappedInterlacedPictures` describe the Pictures that are VC-6 enco
 Labels intended for use as values for the Picture Essence Coding item of the Generic Picture Essence
 Descriptor, specified in SMPTE ST 377-1, are given in Table 3.
 
-[Table 3 – Picture Essence Coding Label Values for VC-6]{custom-style="smpte-caption-table"}
+[Table 3 – Picture Essence Coding Label Values for VC-6]{custom-style="smpte-caption-figure"}
 
 | Symbol                               | Kind                                   | Item UL
 |--------------------------------------|----------------------------------------|---------------------------------------------------

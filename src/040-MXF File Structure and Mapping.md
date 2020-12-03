@@ -7,9 +7,17 @@ SMPTE ST-2117-1, MXF files specified by this document shall have one of the two 
 **BPP** is an abbreviation for Body Partition Pack and
 **FPP** is a shorthand for Footer Partition Pack.
 
-![Figure 1 - Single Essence Location Style](figure-01.svg)
+![ ](figure-01.png)
 
-![Figure 2 - Multiple Essence Location Style](figure-02.svg)
+::: {custom-style="smpte-caption"}
+Figure 1 - Single Essence Location Style
+:::
+
+![ ](figure-02.png)
+
+::: {custom-style="smpte-caption"}
+Figure 2 - Multiple Essence Location Style
+:::
 
 Detailed constraints are listed in Annex B Constraints of a Conformant Implementation.
 

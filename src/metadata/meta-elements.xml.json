@@ -5,8 +5,29 @@
     "Symbol": "VC6Parameters",
     "UL": "urn:smpte:ul:060e2b34.0101010e.04010606.02000000",
     "Kind": "NODE",
-    "Name": "HEVC Parameters",
-    "Definition": "Parameters about HEVC Picture Coding",
+    "Name": "VC6 Parameters",
+    "Definition": "Parameters about VC6 Picture Coding",
+    "IsDeprecated": "false"
+  },
+  "VC6UpsamplerArray": {
+    "Register": "Elements",
+    "NamespaceName": "http://www.smpte-ra.org/reg/335/2012",
+    "Symbol": "VC6UpsamplerArray",
+    "UL": "urn:smpte:ul:060e2b34.0101010e.04010606.02010101",
+    "Kind": "Leaf",
+    "Name": "VC6 Parameters",
+    "Definition": "Oredered MXF array of UInt8 Upsampler indices values",
+    "IsDeprecated": "false",
+    "Type": "urn:smpte:ul:060e2b34.01040101.04010100.00000000"
+  },
+  "VC6FixedUpsampler": {
+    "Register": "Elements",
+    "NamespaceName": "http://www.smpte-ra.org/reg/335/2012",
+    "Symbol": "VC6FixedUpsampler",
+    "UL": "urn:smpte:ul:060e2b34.0101010e.04010606.02010102",
+    "Kind": "Leaf",
+    "Name": "VC6 Fixed Upsampler",
+    "Definition": "The Upsampler Identified in the bitstream for ideal reconstruction",
     "IsDeprecated": "false"
   }
 }
