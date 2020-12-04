@@ -11,9 +11,9 @@ metadata:
     - src/metadata/meta-types.xml.json
     - src/metadata/meta-groups.xml.json
     - src/metadata/meta-elements.xml.json
+    - src/metadata/meta-essence.xml.json
     - src/metadata/meta-labels.xml.json
     - src/metadata/VC-6-mxf-document-metadata.json
-    - src/metadata/meta-essence.xml.json
 
 from: markdown
 to: docx

@@ -11,7 +11,7 @@ The values of the Essence Container Label for VC-6 Bytestreams in MXF shall be o
 
 | Symbol                                  | Kind                                             | Item UL
 |-----------------------------------------|------------------------------------------------- |---------------------------------------------------
-| MXFGCVC6Bytestreams                     | {{MXFGCVC6Bytestreams.Kind}}                     | {{MXFGCVC6Bytestreams.UL}}
+| MXFGCVC6BytestreamTypes                 | {{MXFGCVC6BytestreamTypes.Kind}}                 | {{MXFGCVC6BytestreamTypes.UL}}
 | MXFGCVC6FrameWrappedGenericBytestream   | {{MXFGCVC6FrameWrappedGenericBytestream.Kind}}   | {{MXFGCVC6FrameWrappedGenericBytestream.UL}}
 | MXFGCVC6FrameWrappedProgressivePictures | {{MXFGCVC6FrameWrappedProgressivePictures.Kind}} | {{MXFGCVC6FrameWrappedProgressivePictures.UL}}
 | MXFGCVC6FrameWrappedInterlacedPictures  | {{MXFGCVC6FrameWrappedInterlacedPictures.Kind}}  | {{MXFGCVC6FrameWrappedInterlacedPictures.UL}}

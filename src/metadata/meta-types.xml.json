@@ -1,61 +1,30 @@
 {
-  "HEVCCodedContentType": {
+  "VC6SubDescriptorEchelonStrongReferenceVector": {
     "Register": "Types",
     "NamespaceName": "http://www.smpte-ra.org/reg/2003/2012",
-    "Symbol": "HEVCCodedContentType",
-    "UL": "urn:smpte:ul:060e2b34.01040101.02010133.00000000",
+    "Symbol": "VC6SubDescriptorEchelonStrongReferenceVector",
+    "UL": "urn:smpte:ul:060e2b34.01040101.05060e01.00000000",
     "Kind": "LEAF",
-    "Name": "HEVCCodedContentType",
-    "DefiningDocument": "SMPTE ST 381-5",
+    "Name": "VC6 SubDescriptor Echelon Strong Reference Vector",
     "IsDeprecated": "false",
     "ContextScope": "UnknownContext",
-    "TypeKind": "Enumeration",
-    "BaseType": "urn:smpte:ul:060e2b34.01040101.01010100.00000000",
-    "Facets": {
-      "Facet": [
-        {
-          "Symbol": [
-            "HEVCCodedContent_NotKnown"
-          ],
-          "Name": [
-            "HEVCCodedContent_NotKnown"
-          ],
-          "Value": [
-            "0"
-          ],
-          "IsDeprecated": [
-            "false"
-          ]
-        },
-        {
-          "Symbol": [
-            "HEVCCodedContent_ProgressiveFramePicture"
-          ],
-          "Name": [
-            "HEVCCodedContent_ProgressiveFramePicture"
-          ],
-          "Value": [
-            "1"
-          ],
-          "IsDeprecated": [
-            "false"
-          ]
-        },
-        {
-          "Symbol": [
-            "HEVCCodedContent_InterlacedFieldPicture"
-          ],
-          "Name": [
-            "HEVCCodedContent_InterlacedFieldPicture"
-          ],
-          "Value": [
-            "2"
-          ],
-          "IsDeprecated": [
-            "false"
-          ]
-        }
-      ]
-    }
+    "TypeKind": "VariableArray",
+    "BaseType": "urn:smpte:ul:060e2b34.01040101.05021c00.00000000",
+    "TypeQualifiers": "isOrdered"
+  },
+  "VC6EchelonPropertiesStrongReferenceSet": {
+    "Register": "Types",
+    "NamespaceName": "http://www.smpte-ra.org/reg/2003/2012",
+    "Symbol": "VC6EchelonPropertiesStrongReferenceSet",
+    "UL": "urn:smpte:ul:060e2b34.01040101.05050d00.00000000",
+    "Kind": "LEAF",
+    "Name": "KLVDataDefinitionStrongReferenceSet",
+    "Applications": "AAF[1.1:]",
+    "IsDeprecated": "false",
+    "ContextScope": "UnknownContext",
+    "TypeKind": "Set",
+    "TypeSize": "0",
+    "BaseType": "urn:smpte:ul:060e2b34.01040101.05022000.00000000",
+    "TypeQualifiers": "isIdentified"
   }
 }

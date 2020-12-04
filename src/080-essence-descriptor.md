@@ -1,60 +1,55 @@
 # VC-6 Picture SubDescriptor
 
-[
 For the VC-6 wrapping, the VC-6 Sub Descriptor, which is strongly referenced from the CDCI Descriptor or the RGBA Descriptor, should be used.
 The VC-6 Sub Descriptor consists of the VC-6 specific properties as shown in Table 4.
-]{custom-style="smpte-ch-highlight"}
+
+::: {custom-style="smpte-note"}
+NOTE: In the tables in this clause, [**R**] indicates that a property is required
+:::
 
 ::: {custom-style="smpte-caption"}
 Table 4 - VC-6 Sub Descriptor ULs
 :::
 
-| Symbol                 | Kind        | Item UL                                                            |
-| -----------------------|-------------|--------------------------------------------------------------------|
-| 2117SubDescriptor      | GROUP       | `{{2117SubDescriptor.UL}}`                                         |
-| VC6FixedUpsampler      | UInt8       | `{{VC6FixedUpsampler.UL}}`                                         |
-| VC6ShortcutVector      | UInt16      | `{{VC6ShortcutVector.UL}}`                                         |
-| VC6Lossless            | Boolean     | `{{VC6Lossless.UL}}`                                               |
-| VC6CBR                 | Boolean     | `{{VC6CBR.UL}}`                                                    |
-| VC6Bitrate             | UInt64      | `{{VC6Bitrate.UL}}`                                                |
-| VC6CompressedFrameMax  | UInt54      | `{{VC6CompressedFrameMax.UL}}`                                     |
-| VC6CompressedFrameAvg  | UInt54      | `{{VC6CompressedFrameAvg.UL}}`                                     |
-| VC6MaxNoOfEchelons     | UInt8       | `{{VC6MaxNoOfEchelons.UL}}`                                        |
-| VC6EchelonList         | Group       | `{{VC6EchelonList.UL}}`                                            |
+| Symbol                 | Kind                           | Item UL                         |
+| -----------------------|--------------------------------|---------------------------------|
+| ST2117SubDescriptor    | {{ST2117SubDescriptor.Kind}}   | {{ST2117SubDescriptor.UL}}      |
+| VC6FixedUpsampler      | {{VC6FixedUpsampler.Kind}}     | {{VC6FixedUpsampler.UL}}        |
+| VC6ShortcutVectorRange | {{VC6ShortcutVectorRange.Kind}}| {{VC6ShortcutVectorRange.UL}}   |
+| VC6Lossless            | {{VC6Lossless.Kind}}           | {{VC6Lossless.UL}}              |
+| VC6CBR                 | {{VC6CBR.Kind}}                | {{VC6CBR.UL}}                   |
+| VC6Bitrate             | {{VC6Bitrate.Kind}}            | {{VC6Bitrate.UL}}               |
+| VC6CompressedFrameMax  | {{VC6CompressedFrameMax.Kind}} | {{VC6CompressedFrameMax.UL}}    |
+| VC6CompressedFrameAvg  | {{VC6CompressedFrameAvg.Kind}} | {{VC6CompressedFrameAvg.UL}}    |
+| VC6MaxNoOfEchelons     | {{VC6MaxNoOfEchelons.Kind}}    | {{VC6MaxNoOfEchelons.UL}}       |
+| VC6EchelonVector       | {{VC6EchelonVector.Kind}}      | {{VC6EchelonVector.UL}}         |
 
 ::: {custom-style="smpte-caption"}
-Table 5 - VC-6 Sub Descriptor Elements
+Table 5 - Elements in the VC-6 Sub Descriptor
 :::
 
-| Symbol                 | type        |                                                                    |
-| -----------------------|-------------|--------------------------------------------------------------------|
-| 2117SubDescriptor      | GROUP       | Properties in the group are in this table                          |
-| VC6FixedUpsampler      | UInt8       | Upsampler Identified in the bitstream for ideal reconstruction     |
-| VC6ShortcutVector      | UInt16      | One shortcut per frame?????  34MB of xml                                      |
-| VC6Lossless            | Boolean     | Set to true (_by magic_) if encoding is intended to be lossless    |
-| VC6CBR                 | Boolean     | Set to true if the bitrate is intended to be constant              |
-| VC6Bitrate             | UInt64      | Bits per second value of VBR bitrate cap or CBR target value       |
-| VC6CompressedFrameMax  | UInt54      | If present, the maximum frame size in the file                     |
-| VC6CompressedFrameAvg  | UInt54      | If present, the average of all frame sizes in the file             |
-| VC6MaxNoOfEchelons     | UInt8       | Maximum number of Echelons in any frame in the file                |
-| VC6EchelonList         | Group       | List of the dimensions of each Echelon                             |
+| Symbol                 | type                                 | Len                               | Meaning                                  |
+| -----------------------|--------------------------------------|-----------------------------------|------------------------------------------|
+| 2117SubDescriptor      | Set UL                               | 16                                | [**R**] ST 2117 Sub Descriptor Key       |
+| VC6FixedUpsampler      | {{VC6FixedUpsampler.TypeSymbol}}     | {{VC6FixedUpsampler.TypeSize}}    | [**R**] {{VC6FixedUpsampler.Definition}} |
+| VC6Lossless            | {{VC6Lossless.TypeSymbol}}           | {{VC6Lossless.TypeSize}}          | {{VC6Lossless.Definition}}               |
+| VC6CBR                 | {{VC6CBR.TypeSymbol}}                | {{VC6CBR.TypeSize}}               | {{VC6CBR.Definition}}                    |
+| VC6Bitrate             | {{VC6Bitrate.TypeSymbol}}            | {{VC6Bitrate.TypeSize}}           | {{VC6Bitrate.Definition}}                |
+| VC6CompressedFrameMax  | {{VC6CompressedFrameMax.TypeSymbol}} | {{VC6CompressedFrameMax.TypeSize}}| {{VC6CompressedFrameMax.Definition}}     |
+| VC6CompressedFrameAvg  | {{VC6CompressedFrameAvg.TypeSymbol}} | {{VC6CompressedFrameAvg.TypeSize}}| {{VC6CompressedFrameAvg.Definition}}     |
+| VC6MaxNoOfEchelons     | {{VC6MaxNoOfEchelons.TypeSymbol}}    | {{VC6MaxNoOfEchelons.TypeSize}}   | {{VC6MaxNoOfEchelons.Definition}}        |
+| VC6EchelonVector       | Array of Strong Ref                  | 8 + 16n                           | {{VC6EchelonVector.Definition}}          |
+
+A zero value of `VC6CBR` shall indicates that `VC6Bitrate` represents the target CBR bitrate. A non-zero value shall indicate that `VC6Bitrate` represents the maximum
+bitrate value in bits per second for one frame period.
 
 ::: {custom-style="smpte-caption"}
-Table 6 - VC6EchelonList Symbols
+Table 7 - Elements in the VC6EchelonProperties Set
 :::
 
-| Symbol                 | type        |                                                                    |
-| -----------------------|-------------|--------------------------------------------------------------------|
-| VC6EchelonList         | GROUP       | Properties in the group are in this table                          |
-| VC6EchelonProperties   | Group       | An Echelon Properties Set                                          |
-
-::: {custom-style="smpte-caption"}
-Table 7 - VC6EchelonProperties Symbols
-:::
-
-| Symbol                 | type        |  Description                                                       |
-| -----------------------|-------------|--------------------------------------------------------------------|
-| VC6EchelonProperties   | GROUP       | Properties in the group are in this table                          |
-| VC6EchelonIndex        | Int32       | Signed Index of this Echelon as identified in ST 2117-1:2020 §4.8.9|
-| VC6SampledHeight       | UInt32      | Sampled Height of the recontituted pixel grid                      |
-| VC6SampledWidth        | UInt32      | Sampled Height of the recontituted pixel grid                      |
+| Symbol                | type                               | Len                            | Meaning                                |
+| ----------------------|------------------------------------|--------------------------------|----------------------------------------|
+| VC6EchelonProperties  | Set UL                             | 16                             | [**R**] VC6EchelonProperties Key       |
+| VC6EchelonIndex       | {{VC6EchelonIndex.TypeSymbol}}     | {{VC6EchelonIndex.TypeSize}}   | [**R**] {{VC6EchelonIndex.Definition}} |
+| VC6SampledHeight      | {{VC6SampledHeight.TypeSymbol}}    | {{VC6SampledHeight.TypeSize}}  | [**R**] {{VC6SampledHeight.Definition}}|
+| VC6SampledWidth       | {{VC6SampledWidth.TypeSymbol}}     | {{VC6SampledWidth.TypeSize}}   | [**R**] {{VC6SampledWidth.Definition}} |

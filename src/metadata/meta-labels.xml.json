@@ -1,12 +1,12 @@
 {
-  "MXFGCVC6Bytestreams": {
+  "MXFGCVC6BytestreamTypes": {
     "Register": "Labels",
     "NamespaceName": "http://www.smpte-ra.org/reg/400/2012",
-    "Symbol": "MXFGCVC6Bytestreams",
+    "Symbol": "MXFGCVC6BytestreamTypes",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02210000",
     "Kind": "NODE",
-    "Name": "MXF-GC VC-6 Bytestreams",
-    "Definition": "Identifies VC-6 Bytestreams in MXF",
+    "Name": "MXF-GC VC-6 Bytestream Typess",
+    "Definition": "Identifies VC-6 Bytestream Types in MXF",
     "DefiningDocument": "SMPTE ST 2117-10",
     "IsDeprecated": "false"
   },
