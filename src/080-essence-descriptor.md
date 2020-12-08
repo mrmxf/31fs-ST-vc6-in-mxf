@@ -11,37 +11,44 @@ NOTE: In the tables in this clause, [**R**] indicates that a property is require
 Table 4 - VC-6 Sub Descriptor ULs
 :::
 
-| Symbol                 | Kind                           | Item UL                         |
-| -----------------------|--------------------------------|---------------------------------|
-| ST2117SubDescriptor    | {{ST2117SubDescriptor.Kind}}   | {{ST2117SubDescriptor.UL}}      |
-| VC6FixedUpsampler      | {{VC6FixedUpsampler.Kind}}     | {{VC6FixedUpsampler.UL}}        |
-| VC6ShortcutVectorRange | {{VC6ShortcutVectorRange.Kind}}| {{VC6ShortcutVectorRange.UL}}   |
-| VC6Lossless            | {{VC6Lossless.Kind}}           | {{VC6Lossless.UL}}              |
-| VC6CBR                 | {{VC6CBR.Kind}}                | {{VC6CBR.UL}}                   |
-| VC6Bitrate             | {{VC6Bitrate.Kind}}            | {{VC6Bitrate.UL}}               |
-| VC6CompressedFrameMax  | {{VC6CompressedFrameMax.Kind}} | {{VC6CompressedFrameMax.UL}}    |
-| VC6CompressedFrameAvg  | {{VC6CompressedFrameAvg.Kind}} | {{VC6CompressedFrameAvg.UL}}    |
-| VC6MaxNoOfEchelons     | {{VC6MaxNoOfEchelons.Kind}}    | {{VC6MaxNoOfEchelons.UL}}       |
-| VC6EchelonVector       | {{VC6EchelonVector.Kind}}      | {{VC6EchelonVector.UL}}         |
+| Symbol                 | Kind                            | Item UL                         |
+| -----------------------|---------------------------------|---------------------------------|
+| ST2117SubDescriptor    | {{ST2117SubDescriptor.Kind}}    | {{ST2117SubDescriptor.UL}}      |
+| VC6GCUpsamplersBatch   | {{VC6GCUpsamplersBatch.Kind}}   | {{VC6GCUpsamplersBatch.UL}}     |
+| VC6ShortcutVectorsBatch| {{VC6ShortcutVectorsBatch.Kind}}| {{VC6ShortcutVectorsBatch.UL}}  |
+| VC6Lossless            | {{VC6Lossless.Kind}}            | {{VC6Lossless.UL}}              |
+| VC6CBR                 | {{VC6CBR.Kind}}                 | {{VC6CBR.UL}}                   |
+| VC6Bitrate             | {{VC6Bitrate.Kind}}             | {{VC6Bitrate.UL}}               |
+| VC6CompressedFrameMax  | {{VC6CompressedFrameMax.Kind}}  | {{VC6CompressedFrameMax.UL}}    |
+| VC6CompressedFrameAvg  | {{VC6CompressedFrameAvg.Kind}}  | {{VC6CompressedFrameAvg.UL}}    |
+| VC6MaxNoOfEchelons     | {{VC6MaxNoOfEchelons.Kind}}     | {{VC6MaxNoOfEchelons.UL}}       |
+| VC6EchelonVector       | {{VC6EchelonVector.Kind}}       | {{VC6EchelonVector.UL}}         |
 
 ::: {custom-style="smpte-caption"}
 Table 5 - Elements in the VC-6 Sub Descriptor
 :::
 
-| Symbol                 | type                                 | Len                               | Meaning                                  |
-| -----------------------|--------------------------------------|-----------------------------------|------------------------------------------|
-| 2117SubDescriptor      | Set UL                               | 16                                | [**R**] ST 2117 Sub Descriptor Key       |
-| VC6FixedUpsampler      | {{VC6FixedUpsampler.TypeSymbol}}     | {{VC6FixedUpsampler.TypeSize}}    | [**R**] {{VC6FixedUpsampler.Definition}} |
-| VC6Lossless            | {{VC6Lossless.TypeSymbol}}           | {{VC6Lossless.TypeSize}}          | {{VC6Lossless.Definition}}               |
-| VC6CBR                 | {{VC6CBR.TypeSymbol}}                | {{VC6CBR.TypeSize}}               | {{VC6CBR.Definition}}                    |
-| VC6Bitrate             | {{VC6Bitrate.TypeSymbol}}            | {{VC6Bitrate.TypeSize}}           | {{VC6Bitrate.Definition}}                |
-| VC6CompressedFrameMax  | {{VC6CompressedFrameMax.TypeSymbol}} | {{VC6CompressedFrameMax.TypeSize}}| {{VC6CompressedFrameMax.Definition}}     |
-| VC6CompressedFrameAvg  | {{VC6CompressedFrameAvg.TypeSymbol}} | {{VC6CompressedFrameAvg.TypeSize}}| {{VC6CompressedFrameAvg.Definition}}     |
-| VC6MaxNoOfEchelons     | {{VC6MaxNoOfEchelons.TypeSymbol}}    | {{VC6MaxNoOfEchelons.TypeSize}}   | {{VC6MaxNoOfEchelons.Definition}}        |
-| VC6EchelonVector       | Array of Strong Ref                  | 8 + 16n                           | {{VC6EchelonVector.Definition}}          |
+| Symbol                 | type                                  | Len                                | Meaning                                |
+| -----------------------|---------------------------------------|----------------------------------- |----------------------------------------|
+| 2117SubDescriptor      | Set UL                                | 16                                 | [**R**] ST 2117 Sub Descriptor Key     |
+| VC6GCUpsamplersBatch   | {{VC6GCUpsamplersBatch.TypeSymbol}}   | 8 + 16n                            | {{VC6GCUpsamplersBatch.Definition}}    |
+| VC6ShortcutVectorsBatch| {{VC6ShortcutVectorsBatch.TypeSymbol}}| 8 + 16n                            | {{VC6ShortcutVectorsBatch.Definition}} |
+| VC6Lossless            | {{VC6Lossless.TypeSymbol}}            | {{VC6Lossless.TypeSize}}           | {{VC6Lossless.Definition}}             |
+| VC6CBR                 | {{VC6CBR.TypeSymbol}}                 | {{VC6CBR.TypeSize}}                | {{VC6CBR.Definition}}                  |
+| VC6Bitrate             | {{VC6Bitrate.TypeSymbol}}             | {{VC6Bitrate.TypeSize}}            | {{VC6Bitrate.Definition}}              |
+| VC6CompressedFrameMax  | {{VC6CompressedFrameMax.TypeSymbol}}  | {{VC6CompressedFrameMax.TypeSize}} | {{VC6CompressedFrameMax.Definition}}   |
+| VC6CompressedFrameAvg  | {{VC6CompressedFrameAvg.TypeSymbol}}  | {{VC6CompressedFrameAvg.TypeSize}} | {{VC6CompressedFrameAvg.Definition}}   |
+| VC6MaxNoOfEchelons     | {{VC6MaxNoOfEchelons.TypeSymbol}}     | {{VC6MaxNoOfEchelons.TypeSize}}    | {{VC6MaxNoOfEchelons.Definition}}      |
+| VC6EchelonVector       | Array of Strong Ref                   | 8 + 16n                            | {{VC6EchelonVector.Definition}}        |
 
-A zero value of `VC6CBR` shall indicates that `VC6Bitrate` represents the target CBR bitrate. A non-zero value shall indicate that `VC6Bitrate` represents the maximum
+A zero value of `VC6CBR` shall indicate that `VC6Bitrate` represents the target CBR bitrate. A non-zero value shall indicate that `VC6Bitrate` represents the maximum
 bitrate value in bits per second for one frame period.
+
+::: {custom-style="smpte-note"}
+NOTE: `VC6ShortcutVectorsBatch` contains only unique values. In theory there are 65536 different permutations of ShortcutVector.
+In practise only a few are actually created by an encoder. This property can be used by a decoder to help determine the resrouces
+required for decoding the generic container.
+:::
 
 ::: {custom-style="smpte-caption"}
 Table 7 - Elements in the VC6EchelonProperties Set

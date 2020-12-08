@@ -18,26 +18,26 @@
         <Entry>
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-            <Symbol>VC6FixedUpsampler</Symbol>
+            <Symbol>VC6GCUpsamplersBatch</Symbol>
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010101</UL>
             <Kind>LEAF</Kind>
-            <Name>VC6 Fixed Upsampler</Name>
-            <Definition>Upsampler Identified in the bitstream for ideal reconstruction</Definition>
+            <Name>VC 6GC Upsamplers Batch</Name>
+            <Definition>Unordered Batch of UInt8 Upsampler Indices used in the Generic Container</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
-            <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+            <Type>urn:smpte:ul:060e2b34.01040101.0d020101.03450000</Type>
         </Entry>
         <Entry>
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-            <Symbol>VC6ShortcutVectorRange</Symbol>
+            <Symbol>VC6ShortcutVectorsBatch</Symbol>
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010102</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Shortcut Vector Range</Name>
-            <Definition>Logical OR of all shortcut vectors used in this Generic Container</Definition>
+            <Definition>Unordered Batch of unique UInt16 ShortcutVector values used in the Generic Container</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
-            <Type>urn:smpte:ul:060e2b34.01040101.01010200.00000000</Type>
+            <Type>urn:smpte:ul:060e2b34.01040101.0d020101.03450000</Type>
         </Entry>
         <Entry>
             <Register>Elements</Register>
@@ -67,7 +67,7 @@
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
             <Symbol>VC6Bitrate</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010104</UL>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010105</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Bitrate</Name>
             <Definition>Target CBR Bitrate or Maximum VBR bitrate in bits per second</Definition>
@@ -79,7 +79,7 @@
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
             <Symbol>VC6CompressedFrameMax</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010104</UL>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010106</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Compressed Frame Max</Name>
             <Definition>Maximum Size of a Compressed Frame in the Generic Container</Definition>
@@ -91,7 +91,7 @@
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
             <Symbol>VC6CompressedFrameAvg</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010104</UL>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010107</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Compressed Frame Avg</Name>
             <Definition>Average Size of a Compressed Frame in the Generic Container</Definition>
@@ -103,7 +103,7 @@
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
             <Symbol>VC6MaxNoOfEchelons</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010105</UL>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010108</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Max No Of Echelons</Name>
             <Definition>Maximum Number of Echelons in any Frame in the Generic Container</Definition>
@@ -115,7 +115,7 @@
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
             <Symbol>VC6EchelonVector</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010106</UL>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010109</UL>
             <Kind>LEAF</Kind>
             <Name>File Descriptors</Name>
             <Definition>Specifies a vector of an ordered set of references to VC6EchelonProperties sets</Definition>
@@ -129,7 +129,7 @@
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
             <Symbol>VC6EchelonIndex</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010107</UL>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.0201010a</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Echelon Index</Name>
             <Definition>Signed Index of this Echelon as identified in ST 2117-1:2020 §4.8.9</Definition>
@@ -141,7 +141,7 @@
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
             <Symbol>VC6SampledHeight</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010108</UL>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.0201010b</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Sampled Height</Name>
             <Definition>Sampled Height of the recontituted pixel grid</Definition>
@@ -153,7 +153,7 @@
             <Register>Elements</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
             <Symbol>VC6SampledWidth</Symbol>
-            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010109</UL>
+            <UL>urn:smpte:ul:060e2b34.0101010e.04010606.0201010c</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Sampled Width</Name>
             <Definition>Sampled Width of the reconstituted pixel grid</Definition>
