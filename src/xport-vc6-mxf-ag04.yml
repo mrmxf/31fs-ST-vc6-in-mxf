@@ -37,8 +37,8 @@ input-files:
   - xr/boilerplate/smpte/inc-draft-st-030-terms-and-definitions-heading.md
 
   - src/030-terms-definitions.md
-  - src/040-MXF File Structure and Mapping.md
-  - src/050-Mapping-VC-6-bytestream.md
+  - src/040-MXF-file-structure.md
+  - src/050-mapping-VC-6.md
   - src/060-klv-encoding.md
   - src/070-labels.md
   - src/080-essence-descriptor.md

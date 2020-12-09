@@ -21,7 +21,9 @@ constant and variable length edit unit sizes.
 
 This essence mapping may be used with any generalized operational pattern.
 
+::: {custom-style="smpte-note"}
 NOTE This does not preclude the use of specialized operational patterns.
+:::
 
 ## Mapping Track Numbers to Generic Container Elements
 
@@ -34,17 +36,19 @@ Frame wrapping maintains each content package of the generic container as a sepa
 contents of the system, picture, sound and data items in synchronism. If a frame-wrapped essence container
 is partitioned, then individual content packages should not be fragmented by the partitioning process.
 
+::: {custom-style="smpte-note"}
 NOTE SMPTE ST 377-1:2019, Section 6.2.2 (Partition Rules Summary) summarizes the use of partitions in MXF files.
+:::
 
 ## MXF Header Metadata Property Values
 
 The following restrictions apply to Picture Stream wrapped with this standard
 
-| Property                    | Progressive Pictures | Interlaced Pictures |
-| ----------------------------|:---------------------|:--------------------|
-| Bytestreams per KLV Element |            1         |           2         |
-| Frame Layout (G.2.1)        |  0 (full_frame)      | 1 (separate_fields) or 4 (segmented_frame) |
-| Sample Rate (G.2.2)         |         Frame        |        Frame        |
-| Edit Rate (B.12)            |         Frame        |        Frame        |
-| Index Edit Rate (11.2.3)    |         Frame        |        Frame        |
-| Aspect Ratio (G.2.4)        |         Frame        |        Frame        |
+| Property                           | Progressive Pictures | Interlaced Pictures |
+| -----------------------------------|:---------------------|:--------------------|
+| Bitstreams per KLV Element         |            1         |           2         |
+| Frame Layout (ST 377-1 §G.2.1)     |  0 (full_frame)      | 1 (separate_fields) or 4 (segmented_frame) |
+| Sample Rate (ST 377-1 §G.2.2)      |         Frame        |        Frame        |
+| Edit Rate (ST 377-1 §B.12)         |         Frame        |        Frame        |
+| Index Edit Rate (ST 377-1 §11.2.3) |         Frame        |        Frame        |
+| Aspect Ratio (ST 377-1 §G.2.4)     |         Frame        |        Frame        |

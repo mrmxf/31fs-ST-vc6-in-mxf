@@ -1,4 +1,4 @@
-SMPTE ST 2117-1 (VC-6) is a versatile compression intra-frame scheme. This document maps the VC-6
+SMPTE ST 2117-1 (VC-6) is a versatile intra-frame compression scheme. This document maps the VC-6
 bitstream into the MXF Generic Container. The usage of this mapping to synchronise with other components
 such as audio and video is outside the scope of this document.
 

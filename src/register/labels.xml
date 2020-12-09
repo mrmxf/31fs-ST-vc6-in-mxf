@@ -7,22 +7,22 @@
         <Entry>
             <Register>Labels</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
-            <Symbol>MXFGCVC6BytestreamTypes</Symbol>
+            <Symbol>MXFGCVC6BitstreamTypes</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210000</UL>
             <Kind>NODE</Kind>
-            <Name>MXF-GC VC-6 Bytestream Typess</Name>
-            <Definition>Identifies VC-6 Bytestream Types in MXF</Definition>
+            <Name>MXF-GC VC-6 bitstream Typess</Name>
+            <Definition>Identifies VC-6 bitstream Types in MXF</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
         <Entry>
             <Register>Labels</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
-            <Symbol>MXFGCVC6FrameWrappedGenericBytestream</Symbol>
+            <Symbol>MXFGCVC6FrameWrappedGenericbitstream</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210100</UL>
             <Kind>LEAF</Kind>
-            <Name>VC6 Frame Wrapped Generic Bytestream</Name>
-            <Definition>Identifies VC-6 Frame Wrapped Generic Bytestreams in MXF</Definition>
+            <Name>VC6 Frame Wrapped Generic bitstream</Name>
+            <Definition>Identifies VC-6 Frame Wrapped Generic bitstreams in MXF</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
@@ -33,7 +33,7 @@
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210200</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Frame Wrapped Progressive Pictures</Name>
-            <Definition>Identifies VC-6 Bytestreams of Progressive Pictures in MXF</Definition>
+            <Definition>Identifies VC-6 bitstreams of Progressive Pictures in MXF</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
@@ -44,7 +44,7 @@
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210300</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Frame Wrapped Interlaced Pictures</Name>
-            <Definition>Identifies VC-6 Bytestreams of Interlaced Pictures in MXF</Definition>
+            <Definition>Identifies VC-6 bitstreams of Interlaced Pictures in MXF</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
@@ -52,22 +52,22 @@
         <Entry>
             <Register>Labels</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
-            <Symbol>VC6Bytestreams</Symbol>
+            <Symbol>VC6Bitstreams</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.04010202.01470000</UL>
             <Kind>NODE</Kind>
-            <Name>VC-6 Bytestreams</Name>
-            <Definition>Identifies VC-6 Picture Coding Bytestreams</Definition>
+            <Name>VC-6 bitstreams</Name>
+            <Definition>Identifies VC-6 Picture Coding bitstreams</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
         <Entry>
             <Register>Labels</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
-            <Symbol>VC6UnrestrictedBytestream</Symbol>
+            <Symbol>VC6Unrestrictedbitstream</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210100</UL>
             <Kind>LEAF</Kind>
-            <Name>VC-6 Unrestricted Bytestream</Name>
-            <Definition>Identifies a VC-6 Bytestream with no constraints</Definition>
+            <Name>VC-6 Unrestricted bitstream</Name>
+            <Definition>Identifies a VC-6 bitstream with no constraints</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
@@ -78,7 +78,7 @@
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02210100</UL>
             <Kind>LEAF</Kind>
             <Name>VC-6 Constrained By Some Magic</Name>
-            <Definition>Identifies a VC-6 Bytestream constrained to some undefined profile or level</Definition>
+            <Definition>Identifies a VC-6 bitstream constrained to some undefined profile or level</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>

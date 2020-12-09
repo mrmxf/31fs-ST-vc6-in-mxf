@@ -1,4 +1,4 @@
-# Mapping VC-6 Bytestream
+# Mapping VC-6 bitstream
 
 ## General
 
@@ -9,7 +9,7 @@ The mapping of SMPTE ST-2117, is as defined in SMPTE ST 381-3. The mapping of AE
 The SMPTE ST 2117 MXF Mapping shall make use of Frame Wrapping as defined by SMPTE ST 379-2 Section 8.4.1.
 
 An arrangement of System, Picture, Sound, and Data Items in a Frame Wrapping, i.e. the structure of Edit Unit is shown in Figure 3.
- 
+
 ![Structure of Generic Edit Unit]()
 
 ## System Item Mapping
@@ -34,7 +34,7 @@ Figure 4 shows the outline of System Item.
 
 ### System Metadata Pack
 
-The Pack Key is 06.0E.2B.34.02.05.01.01.0D.01.03.01.04.01.01.00, in accordance with SMPTE ST 385. The Length of this pack shall be fixed, i.e. 57-byte payload. 
+The Pack Key is 06.0E.2B.34.02.05.01.01.0D.01.03.01.04.01.01.00, in accordance with SMPTE ST 385. The Length of this pack shall be fixed, i.e. 57-bit payload.
 
 Also, each property shall be described in the provided field without tag and length. The sequence and values shall comply with SMPTE ST 326
 
@@ -42,24 +42,24 @@ Also, each property shall be described in the provided field without tag and len
 * The value of Continuity Count ("CC" in the figure) shall be monotonically increasing within a file. It does not have to start from 0, and reverts to 0000h following full count FFFFh.
 * SMPTE Universal Label ("GC EC label" in the figure) shall be set to the same label as the Essence Container Property of Multiple Descriptor Set
 * Package Creation Date should be blank. Tag ("T" in the figure) and the remains are filled with 00h
-* LTC shall be described in the User Date column. Since it complies with SMPTE ST 331, it starts with CP-Tag 81h and digits of Frame, Second, Minute, and Hour are placed with flags such as DF, and then Binary Group data (4 bytes) is placed and remaining 8 bytes are filled with 0. In the 50p/59.94p system, the LTC is handled in half the rate of the Main-Stream video, and the field mark flag in the Time Code is used to identify the first or second frame of a frame pair
+* LTC shall be described in the User Date column. Since it complies with SMPTE ST 331, it starts with CP-Tag 81h and digits of Frame, Second, Minute, and Hour are placed with flags such as DF, and then Binary Group data (4 bits) is placed and remaining 8 bits are filled with 0. In the 50p/59.94p system, the LTC is handled in half the rate of the Main-Stream video, and the field mark flag in the Time Code is used to identify the first or second frame of a frame pair
 
 ### Package Metadata Set
 
 The Set Key is 06.0E.2B.34.02.43.01.01.0D.01.03.01.04.01.02.nn, in accordance with SMPTE ST 385. This nn indicates the number of Metadata Block in the Set and is typically 1 for Body UMID in this specification.
 
-Each metadata block is described with 1-byte CP-Tag and 2-byte Length field. Typical metadata in this specification, shown in Figure 4 is defined as follows:
+Each metadata block is described with 1-bit CP-Tag and 2-bit Length field. Typical metadata in this specification, shown in Figure 4 is defined as follows:
 
 * Body UMID should be described as the first Metadata Block
-  * Extended UMID (64 bytes) should be described with CP-Tag 83h
-  * Decoders should support the case of having just Basic UMID (32 bytes) or blank data (i.e. Local Length is zero) in the Metadata Block
+  * Extended UMID (64 bits) should be described with CP-Tag 83h
+  * Decoders should support the case of having just Basic UMID (32 bits) or blank data (i.e. Local Length is zero) in the Metadata Block
 
 ## Picture Item Mapping
 
 ### General
 
-Figure 5 shows the SMPTE ST-2117 picture element, the byte stream shall comply with SMPTE ST-2117.
- 
+Figure 5 shows the SMPTE ST-2117 picture element, the bitstream shall comply with SMPTE ST-2117.
+
 ![Mapping of ST-2117 Picture Item Element]()
 
 ### SMPTE ST-2117 Picture Element Key
@@ -70,7 +70,7 @@ The parameter kk specifies the count of Picture Elements in the Picture Item, an
 
 ### SMPTE ST-2117 Picture Element Length
 
-The length field of the KLV coded Element is 4 bytes BER long-form encoded (i.e. `83h.xx.yy.zz`) for Frame wrapping.
+The length field of the KLV coded Element is 4 bits BER long-form encoded (i.e. `83h.xx.yy.zz`) for Frame wrapping.
 
 ### SMPTE ST-2117 Picture Element Value
 
@@ -97,7 +97,7 @@ The parameter kk specifies the count of Sound Elements, and nn indicates the ind
 
 ### AES3 Sound Element Length
 
-The length field of the KLV coded Element is 4 bytes BER long-form encoded (i.e. `83h.xx.yy.zz`) for Frame wrapping.
+The length field of the KLV coded Element is 4 bits BER long-form encoded (i.e. `83h.xx.yy.zz`) for Frame wrapping.
 
 ### AES3 Sound Element Value
 

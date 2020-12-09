@@ -29,7 +29,7 @@ input-files:
   - xr/boilerplate/smpte/inc-draft-st-029-hint-terms-and-definitions.md
   - src-rp-usage/st-xxxx-030-terms-definitions.md
   - src-rp-usage/st-xxxx-040-MXF File Structure and Mapping.md
-  - src-rp-usage/st-xxxx-050-Mapping-VC-6-bytestream.md
+  - src-rp-usage/st-xxxx-050-Mapping-VC-6-bitstream.md
   - xr/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
 # paths to search for images
 resource-path: [".", "src", "xr/boilerplate/smpte"]

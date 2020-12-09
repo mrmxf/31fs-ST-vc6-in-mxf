@@ -11,18 +11,19 @@ NOTE: In the tables in this clause, [**R**] indicates that a property is require
 Table 4 - VC-6 Sub Descriptor ULs
 :::
 
-| Symbol                 | Kind                            | Item UL                         |
-| -----------------------|---------------------------------|---------------------------------|
-| ST2117SubDescriptor    | {{ST2117SubDescriptor.Kind}}    | {{ST2117SubDescriptor.UL}}      |
-| VC6GCUpsamplersBatch   | {{VC6GCUpsamplersBatch.Kind}}   | {{VC6GCUpsamplersBatch.UL}}     |
-| VC6ShortcutVectorsBatch| {{VC6ShortcutVectorsBatch.Kind}}| {{VC6ShortcutVectorsBatch.UL}}  |
-| VC6Lossless            | {{VC6Lossless.Kind}}            | {{VC6Lossless.UL}}              |
-| VC6CBR                 | {{VC6CBR.Kind}}                 | {{VC6CBR.UL}}                   |
-| VC6Bitrate             | {{VC6Bitrate.Kind}}             | {{VC6Bitrate.UL}}               |
-| VC6CompressedFrameMax  | {{VC6CompressedFrameMax.Kind}}  | {{VC6CompressedFrameMax.UL}}    |
-| VC6CompressedFrameAvg  | {{VC6CompressedFrameAvg.Kind}}  | {{VC6CompressedFrameAvg.UL}}    |
-| VC6MaxNoOfEchelons     | {{VC6MaxNoOfEchelons.Kind}}     | {{VC6MaxNoOfEchelons.UL}}       |
-| VC6EchelonVector       | {{VC6EchelonVector.Kind}}       | {{VC6EchelonVector.UL}}         |
+| Symbol                 | Register.Kind                                                        | Item UL                         |
+| -----------------------|----------------------------------------------------------------------|---------------------------------|
+| ST2117SubDescriptor    | {{ST2117SubDescriptor.Register}}.{{ST2117SubDescriptor.Kind}}        | {{ST2117SubDescriptor.UL}}      |
+| VC6EchelonProperties   | {{VC6EchelonProperties.Register}}.{{VC6EchelonProperties.Kind}}      | {{VC6EchelonProperties.UL}}     |
+| VC6GCUpsamplersBatch   | {{VC6GCUpsamplersBatch.Register}}.{{VC6GCUpsamplersBatch.Kind}}      | {{VC6GCUpsamplersBatch.UL}}     |
+| VC6ShortcutVectorsBatch| {{VC6ShortcutVectorsBatch.Register}}.{{VC6ShortcutVectorsBatch.Kind}}| {{VC6ShortcutVectorsBatch.UL}}  |
+| VC6Lossless            | {{VC6Lossless.Register}}.{{VC6Lossless.Kind}}                        | {{VC6Lossless.UL}}              |
+| VC6CBR                 | {{VC6CBR.Register}}.{{VC6CBR.Kind}}                                  | {{VC6CBR.UL}}                   |
+| VC6Bitrate             | {{VC6Bitrate.Register}}.{{VC6Bitrate.Kind}}                          | {{VC6Bitrate.UL}}               |
+| VC6CompressedFrameMax  | {{VC6CompressedFrameMax.Register}}.{{VC6CompressedFrameMax.Kind}}    | {{VC6CompressedFrameMax.UL}}    |
+| VC6CompressedFrameAvg  | {{VC6CompressedFrameAvg.Register}}.{{VC6CompressedFrameAvg.Kind}}    | {{VC6CompressedFrameAvg.UL}}    |
+| VC6MaxNoOfEchelons     | {{VC6MaxNoOfEchelons.Register}}.{{VC6MaxNoOfEchelons.Kind}}          | {{VC6MaxNoOfEchelons.UL}}       |
+| VC6EchelonVector       | {{VC6EchelonVector.Register}}.{{VC6EchelonVector.Kind}}              | {{VC6EchelonVector.UL}}         |
 
 ::: {custom-style="smpte-caption"}
 Table 5 - Elements in the VC-6 Sub Descriptor
@@ -46,7 +47,7 @@ bitrate value in bits per second for one frame period.
 
 ::: {custom-style="smpte-note"}
 NOTE: `VC6ShortcutVectorsBatch` contains only unique values. In theory there are 65536 different permutations of ShortcutVector.
-In practise only a few are actually created by an encoder. This property can be used by a decoder to help determine the resrouces
+In practise only a few are actually created by an encoder. This property can be used by a decoder to help determine the resources
 required for decoding the generic container.
 :::
 

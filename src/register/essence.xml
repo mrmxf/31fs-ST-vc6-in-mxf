@@ -7,7 +7,7 @@
             <UL>urn:smpte:ul:060E2B34.01020101.0D010301.157f1f7f</UL>
             <Kind>LEAF</Kind>
             <Name>Frame Wrapped VC-6 Picture Element</Name>
-            <Definition>Identifies a frame wrapped Picture Element bytestream conforming to ST 2117-1</Definition>
+            <Definition>Identifies a frame wrapped Picture Element bitstream conforming to ST 2117-1</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>

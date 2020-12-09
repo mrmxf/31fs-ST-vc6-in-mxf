@@ -20,7 +20,7 @@
     <rNEW:Lossless></rNEW:Lossless>    <!-- Boolean 0 / (not 0)-->
     <!-- is Constant Bit Rate -->
     <rNEW:CBR></rNEW:CBR>    <!-- Boolean -->
-    <!-- Number of Bytes per Frame if CBR == True -->
+    <!-- Number of bits per Frame if CBR == True -->
     <rNEW:FrameCompressedSize></rNEW:FrameCompressedSize>    <!-- Type as defined elsewhere  -->
     <!-- No of LoQs -->
     <rNEW:MaxNoOfEchelons></rNEW:MaxNoOfEchelons>    <!-- Uint8  -->

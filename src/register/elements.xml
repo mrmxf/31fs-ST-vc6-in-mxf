@@ -70,7 +70,7 @@
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010105</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Bitrate</Name>
-            <Definition>Target CBR Bitrate or Maximum VBR bitrate in bits per second</Definition>
+            <Definition>Target CBR bitrate or Maximum VBR bitrate in bits per second</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Type>urn:smpte:ul:060e2b34.01040101.01010400.00000000</Type>
@@ -82,7 +82,7 @@
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010106</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Compressed Frame Max</Name>
-            <Definition>Maximum Size of a Compressed Frame in the Generic Container</Definition>
+            <Definition>Maximum Size in bits of a Compressed Frame in the Generic Container</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Type>urn:smpte:ul:060e2b34.01040101.01010400.00000000</Type>
@@ -94,7 +94,7 @@
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02010107</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Compressed Frame Avg</Name>
-            <Definition>Average Size of a Compressed Frame in the Generic Container</Definition>
+            <Definition>Average Size in bits of a Compressed Frame in the Generic Container</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Type>urn:smpte:ul:060e2b34.01040101.01010400.00000000</Type>
@@ -144,7 +144,7 @@
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.0201010b</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Sampled Height</Name>
-            <Definition>Sampled Height of the recontituted pixel grid</Definition>
+            <Definition>Sampled Height of the reconstructed pixel grid for the echelon</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
@@ -156,7 +156,7 @@
             <UL>urn:smpte:ul:060e2b34.0101010e.04010606.0201010c</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Sampled Width</Name>
-            <Definition>Sampled Width of the reconstituted pixel grid</Definition>
+            <Definition>Sampled Width of the reconstructed pixel grid for the echelon</Definition>
             <IsDeprecated>false</IsDeprecated>
             <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
         </Entry>
