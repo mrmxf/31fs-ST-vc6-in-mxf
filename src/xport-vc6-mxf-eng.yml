@@ -20,21 +20,21 @@ to: docx
 
 reference-doc: xr/refdoc/refdoc-smpte-eng.docx
 
-output-file:  docs/vc6-mxf.docx
+output-file:  docs/vc6-mxf-eng.docx
 input-files:
-  - xr/boilerplate/smpte/inc-draft-st-000-title-block.md
-  - xr/boilerplate/smpte/inc-draft-st-002-foreword.md
-  - xr/boilerplate/smpte/inc-draft-st-005-introduction.md
+  - xr/boilerplate/smpte/inc-smpte-st-000-title-block.md
+  - xr/boilerplate/smpte/inc-smpte-st-002-foreword.md
+  - xr/boilerplate/smpte/inc-smpte-st-005-introduction.md
 
   - src/005-introduction.md
-  - xr/boilerplate/smpte/inc-draft-st-006-ipr-statement.md
-  - xr/boilerplate/smpte/inc-draft-st-010-scope-heading.md
+  - xr/boilerplate/smpte/inc-smpte-st-006-ipr-statement.md
+  - xr/boilerplate/smpte/inc-smpte-st-010-scope-heading.md
 
   - src/010-scope.md
-  - xr/boilerplate/smpte/inc-draft-st-020-normative-references-heading.md
+  - xr/boilerplate/smpte/inc-smpte-st-020-normative-references-heading.md
 
   - src/020-normative-references.md
-  - xr/boilerplate/smpte/inc-draft-st-030-terms-and-definitions-heading.md
+  - xr/boilerplate/smpte/inc-smpte-st-030-terms-and-definitions-heading.md
 
   - src/030-terms-definitions.md
   - src/040-MXF-file-structure.md
@@ -44,7 +44,7 @@ input-files:
   - src/080-essence-descriptor.md
   - src/090-application-issues.md
 
-  - xr/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
+  - xr/boilerplate/smpte/inc-smpte-st-zz0-information-for-editors.md
 # paths to search for images
 resource-path: [".", "src", "xr/boilerplate/smpte"]
 

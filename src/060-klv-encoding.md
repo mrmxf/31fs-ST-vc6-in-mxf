@@ -12,13 +12,14 @@ Table 1 - Picture Element Keys
 |-------------------------------|----------------------------------------|---------------------------------------------------
 | FrameWrappedVC6PictureElement | {{FrameWrappedVC6PictureElement.Kind}} | {{FrameWrappedVC6PictureElement.UL}}
 
-Bytes 1-13 of the `FrameWrappedVC6PictureElement` key are defined by SMPTE ST 379-2.
-
 ::: {custom-style="smpte-note"}
-NOTE: The value `7f` in byte 16 is a placeholder for the Essence element number
-of the Element within the Picture Item starting at `01` as defined by SMPTE ST 379-2.
-For VC-6 mappings this shall have the value `01`.
+NOTE: The table shows the `Item UL` in the SMPTE Metadata registers where `7f` in byte 16
+is a placeholder for the Essence element number of the Element within the Picture Item.
 :::
+
+`FrameWrappedVC6PictureElement` key bytes 1-13 are defined in SMPTE ST 379-2.
+
+`FrameWrappedVC6PictureElement` key byte 16 shall be set to 1.
 
 ### SMPTE ST-2117 Picture Element Length
 

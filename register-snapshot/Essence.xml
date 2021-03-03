@@ -501,7 +501,6 @@
             <Kind>LEAF</Kind>
             <Name>Frame-wrapped JPEG XS Picture Element</Name>
             <Definition>Identifies a frame-wrapped JPEG XS Picture Element</Definition>
-            <Notes>**PROPOSED**</Notes>
             <DefiningDocument>SMPTE ST 2124</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
@@ -513,7 +512,6 @@
             <Kind>LEAF</Kind>
             <Name>Clip-wrapped JPEG XS Picture Element</Name>
             <Definition>Identifies a clip-wrapped JPEG XS Picture Element</Definition>
-            <Notes>**PROPOSED**</Notes>
             <DefiningDocument>SMPTE ST 2124</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>

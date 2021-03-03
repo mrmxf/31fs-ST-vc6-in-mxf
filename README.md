@@ -9,8 +9,8 @@ to force Pandoc to do my bidding. Pandoc has design issues that almost certainly
 prevent it being the tool that SMPTE will use. I'm looking at alternatives that
 the open source community will maintain for us.
 
-The tools have been test on AWS, Ubuntu, Mac and WSL running Ubuntu. They don't work in
-windows CMD / powershell at the moment.
+The tools have been tested on AWS, Ubuntu, Mac and Windows 10 with WSL running Ubuntu.
+They won't work in windows CMD or powershell. The goal is to migrate them to a service.
 
 1. clone this repo somewhere
 2. go into the new project folder `cd 31fs-ST-vc6-in-mxf`

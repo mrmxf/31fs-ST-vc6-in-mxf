@@ -1,19 +1,15 @@
-# VC-6 Picture SubDescriptor
+# `VC6SubDescriptor`
 
-For the VC-6 wrapping, the VC-6 Sub Descriptor, which is strongly referenced from the CDCI Descriptor or the RGBA Descriptor, should be used.
-The VC-6 Sub Descriptor consists of the VC-6 specific properties as shown in Table 4.
-
-::: {custom-style="smpte-note"}
-NOTE: In the tables in this clause, [**R**] indicates that a property is required
-:::
+A `VC6SubDescriptor` should be present for VC-6 content in MXF. The `VC6SubDescriptor` is strongly referenced from
+a CDCI Descriptor or RGBA Descriptor and has the properties shown in Table 4. [**R**] indicates that a property is required.
 
 ::: {custom-style="smpte-caption"}
-Table 4 - VC-6 Sub Descriptor ULs
+Table 4 - `VC6SubDescriptor` ULs
 :::
 
 | Symbol                 | Register.Kind                                                        | Item UL                         |
 | -----------------------|----------------------------------------------------------------------|---------------------------------|
-| ST2117SubDescriptor    | {{ST2117SubDescriptor.Register}}.{{ST2117SubDescriptor.Kind}}        | {{ST2117SubDescriptor.UL}}      |
+| VC6SubDescriptor       | {{VC6SubDescriptor.Register}}.{{VC6SubDescriptor.Kind}}              | {{VC6SubDescriptor.UL}}         |
 | VC6EchelonProperties   | {{VC6EchelonProperties.Register}}.{{VC6EchelonProperties.Kind}}      | {{VC6EchelonProperties.UL}}     |
 | VC6GCUpsamplersBatch   | {{VC6GCUpsamplersBatch.Register}}.{{VC6GCUpsamplersBatch.Kind}}      | {{VC6GCUpsamplersBatch.UL}}     |
 | VC6ShortcutVectorsBatch| {{VC6ShortcutVectorsBatch.Register}}.{{VC6ShortcutVectorsBatch.Kind}}| {{VC6ShortcutVectorsBatch.UL}}  |
@@ -26,12 +22,12 @@ Table 4 - VC-6 Sub Descriptor ULs
 | VC6EchelonVector       | {{VC6EchelonVector.Register}}.{{VC6EchelonVector.Kind}}              | {{VC6EchelonVector.UL}}         |
 
 ::: {custom-style="smpte-caption"}
-Table 5 - Elements in the VC-6 Sub Descriptor
+Table 5 - Elements in the `VC6SubDescriptor`
 :::
 
 | Symbol                 | type                                  | Len                                | Meaning                                |
 | -----------------------|---------------------------------------|----------------------------------- |----------------------------------------|
-| 2117SubDescriptor      | Set UL                                | 16                                 | [**R**] ST 2117 Sub Descriptor Key     |
+| VC6SubDescriptor       | Set UL                                | 16                                 | [**R**] ST 2117 Sub Descriptor Key     |
 | VC6GCUpsamplersBatch   | {{VC6GCUpsamplersBatch.TypeSymbol}}   | 8 + 16n                            | {{VC6GCUpsamplersBatch.Definition}}    |
 | VC6ShortcutVectorsBatch| {{VC6ShortcutVectorsBatch.TypeSymbol}}| 8 + 16n                            | {{VC6ShortcutVectorsBatch.Definition}} |
 | VC6Lossless            | {{VC6Lossless.TypeSymbol}}            | {{VC6Lossless.TypeSize}}           | {{VC6Lossless.Definition}}             |
