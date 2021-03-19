@@ -9,6 +9,7 @@ Table 4 - `VC6SubDescriptor` ULs
 
 | Symbol                 | Register.Kind                                                        | Item UL                         |
 | -----------------------|----------------------------------------------------------------------|---------------------------------|
+| VC6Parameters          | {{VC6Parameters.Register}}.{{VC6Parameters.Kind}}                    | {{VC6Parameters.UL}}            |
 | VC6SubDescriptor       | {{VC6SubDescriptor.Register}}.{{VC6SubDescriptor.Kind}}              | {{VC6SubDescriptor.UL}}         |
 | VC6EchelonProperties   | {{VC6EchelonProperties.Register}}.{{VC6EchelonProperties.Kind}}      | {{VC6EchelonProperties.UL}}     |
 | VC6GCUpsamplersBatch   | {{VC6GCUpsamplersBatch.Register}}.{{VC6GCUpsamplersBatch.Kind}}      | {{VC6GCUpsamplersBatch.UL}}     |

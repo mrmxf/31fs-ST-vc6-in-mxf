@@ -1,0 +1,30 @@
+{
+  "VC6SubDescriptorEchelonStrongReferenceVector": {
+    "Register": "Types",
+    "NamespaceName": "http://www.smpte-ra.org/reg/2003/2012",
+    "Symbol": "VC6SubDescriptorEchelonStrongReferenceVector",
+    "UL": "urn:smpte:ul:060e2b34.01040101.05060e01.00000000",
+    "Kind": "LEAF",
+    "Name": "VC6 SubDescriptor Echelon Strong Reference Vector",
+    "IsDeprecated": "false",
+    "ContextScope": "UnknownContext",
+    "TypeKind": "VariableArray",
+    "BaseType": "urn:smpte:ul:060e2b34.01040101.05021c00.00000000",
+    "TypeQualifiers": "isOrdered"
+  },
+  "VC6EchelonPropertiesStrongReferenceSet": {
+    "Register": "Types",
+    "NamespaceName": "http://www.smpte-ra.org/reg/2003/2012",
+    "Symbol": "VC6EchelonPropertiesStrongReferenceSet",
+    "UL": "urn:smpte:ul:060e2b34.01040101.05050d00.00000000",
+    "Kind": "LEAF",
+    "Name": "KLVDataDefinitionStrongReferenceSet",
+    "Applications": "AAF[1.1:]",
+    "IsDeprecated": "false",
+    "ContextScope": "UnknownContext",
+    "TypeKind": "Set",
+    "TypeSize": "0",
+    "BaseType": "urn:smpte:ul:060e2b34.01040101.05022000.00000000",
+    "TypeQualifiers": "isIdentified"
+  }
+}

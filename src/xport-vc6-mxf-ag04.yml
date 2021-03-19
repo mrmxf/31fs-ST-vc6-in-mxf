@@ -8,11 +8,11 @@
 
 metadata:
   mustache:
-    - src/metadata/meta-types.xml.json
-    - src/metadata/meta-groups.xml.json
-    - src/metadata/meta-elements.xml.json
-    - src/metadata/meta-essence.xml.json
-    - src/metadata/meta-labels.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-types.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-groups.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-elements.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-essence.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-labels.xml.json
     - src/metadata/VC-6-mxf-document-metadata.json
 
 from: markdown

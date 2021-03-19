@@ -21,7 +21,7 @@
             <Symbol>VC6GCUpsamplersBatch</Symbol>
             <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.01000000</UL>
             <Kind>LEAF</Kind>
-            <Name>VC 6GC Upsamplers Batch</Name>
+            <Name>VC6 GC Upsamplers Batch</Name>
             <Definition>Unordered Batch of UInt8 Upsampler Indices used in the Generic Container</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>

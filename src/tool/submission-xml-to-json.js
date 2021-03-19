@@ -11,11 +11,11 @@ const filename_prefix = "src/metadata/meta-"
 const tempname_prefix = "src/metadata/tmp-"
 
 const source_paths = [
-    "src/register/elements.xml",
-    "src/register/essence.xml",
-    "src/register/groups.xml",
-    "src/register/labels.xml",
-    "src/register/types.xml",
+    "src/register/30MR-REG-DD-ST2117-10-elements.xml",
+    "src/register/30MR-REG-DD-ST2117-10-essence.xml",
+    "src/register/30MR-REG-DD-ST2117-10-groups.xml",
+    "src/register/30MR-REG-DD-ST2117-10-labels.xml",
+    "src/register/30MR-REG-DD-ST2117-10-types.xml",
 ]
 const types_paths = [
     "src/metadata/Types-snapshot.xml",

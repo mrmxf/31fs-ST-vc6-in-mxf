@@ -12,10 +12,11 @@
             <Register>Groups</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/395/2014/13/1/aaf</NamespaceName>
             <Symbol>VC6SubDescriptor</Symbol>
-            <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.01018104</UL><!-- HEVC subdescriptor +0xf -->
+            <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.01018104</UL><!-- FFV1 subdescriptor is ....03 -->
             <Kind>LEAF</Kind>
             <Name>VC6 Sub-Descriptor</Name>
             <Definition>ST 2117 VC6 Sub-Descriptor</Definition>
+            <Applications>MXF</Applications>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.01015900</Parent>
@@ -23,19 +24,39 @@
             <KLVSyntax>06 53</KLVSyntax>
             <Contents>
                 <Record>
-                    <UL></UL>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.01000000</UL>
                     <IsOptional>true</IsOptional>
                 </Record>
                 <Record>
-                    <UL></UL>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.02000000</UL>
                     <IsOptional>true</IsOptional>
                 </Record>
                 <Record>
-                    <UL></UL>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.03000000</UL>
                     <IsOptional>true</IsOptional>
                 </Record>
                 <Record>
-                    <UL></UL>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.04000000</UL>
+                    <IsOptional>true</IsOptional>
+                </Record>
+                <Record>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.05000000</UL>
+                    <IsOptional>true</IsOptional>
+                </Record>
+                <Record>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.06000000</UL>
+                    <IsOptional>true</IsOptional>
+                </Record>
+                <Record>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.07000000</UL>
+                    <IsOptional>true</IsOptional>
+                </Record>
+                <Record>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.08000000</UL>
+                    <IsOptional>true</IsOptional>
+                </Record>
+                <Record>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.09000000</UL>
                     <IsOptional>true</IsOptional>
                 </Record>
             </Contents>
@@ -55,19 +76,15 @@
             <KLVSyntax>06 53</KLVSyntax>
             <Contents>
                 <Record>
-                    <UL></UL>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0a000000</UL>
                     <IsOptional>true</IsOptional>
                 </Record>
                 <Record>
-                    <UL></UL>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0b000000</UL>
                     <IsOptional>true</IsOptional>
                 </Record>
                 <Record>
-                    <UL></UL>
-                    <IsOptional>true</IsOptional>
-                </Record>
-                <Record>
-                    <UL></UL>
+                    <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0c000000</UL>
                     <IsOptional>true</IsOptional>
                 </Record>
             </Contents>
