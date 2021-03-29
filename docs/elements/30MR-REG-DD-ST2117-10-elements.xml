@@ -1,6 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Metadata tags to support XML file editing -->
 <!-- author= Bruce Devlin (bruce@mrmxf.com) -->
-<!-- summary_of_edit= Elements Register for ST 381-5 -->
+<!-- summary_of_edit= Elemenets Register for ST 2117-10 VC-6 in MXF -->
+<!--  -->
+<!-- DO NOT EDIT THIS TAG -->
+<!-- master_commit_tag=v000000082 -->
+<!-- DO NOT EDIT THIS TAG -->
+<!--  -->
 
 <ElementsRegister xmlns="http://www.smpte-ra.org/schemas/335/2012">
     <Entries>
@@ -132,7 +138,7 @@
             <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0a000000</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Echelon Index</Name>
-            <Definition>Signed Index of this Echelon as identified in ST 2117-1:2020 §4.8.9</Definition>
+            <Definition>[Req] Signed Index of this Echelon as identified in ST 2117-1:2020 §4.8.9</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
@@ -144,7 +150,7 @@
             <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0b000000</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Sampled Height</Name>
-            <Definition>Sampled Height of the reconstructed pixel grid for the echelon</Definition>
+            <Definition>[Req] Sampled Height of the reconstructed pixel grid for the echelon</Definition>
             <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
@@ -156,7 +162,7 @@
             <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0c000000</UL>
             <Kind>LEAF</Kind>
             <Name>VC6 Sampled Width</Name>
-            <Definition>Sampled Width of the reconstructed pixel grid for the echelon</Definition>
+            <Definition>[Req] Sampled Width of the reconstructed pixel grid for the echelon</Definition>
             <IsDeprecated>false</IsDeprecated>
             <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
         </Entry>

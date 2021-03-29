@@ -1,7 +1,7 @@
 # `VC6SubDescriptor`
 
 A `VC6SubDescriptor` should be present for VC-6 content in MXF. The `VC6SubDescriptor` is strongly referenced from
-a CDCI Descriptor or RGBA Descriptor and has the properties shown in Table 4. [**R**] indicates that a property is required.
+a CDCI Descriptor or RGBA Descriptor and has the properties shown in Table 4. [**Req**] indicates that a property is required.
 
 ::: {custom-style="smpte-caption"}
 Table 4 - `VC6SubDescriptor` ULs
@@ -28,7 +28,7 @@ Table 5 - Elements in the `VC6SubDescriptor`
 
 | Symbol                 | type                                  | Len                                | Meaning                                |
 | -----------------------|---------------------------------------|----------------------------------- |----------------------------------------|
-| VC6SubDescriptor       | Set UL                                | 16                                 | [**R**] ST 2117 Sub Descriptor Key     |
+| VC6SubDescriptor       | Set UL                                | 16                                 | {{VC6SubDescriptor.Definition}}        |
 | VC6GCUpsamplersBatch   | {{VC6GCUpsamplersBatch.TypeSymbol}}   | 8 + 16n                            | {{VC6GCUpsamplersBatch.Definition}}    |
 | VC6ShortcutVectorsBatch| {{VC6ShortcutVectorsBatch.TypeSymbol}}| 8 + 16n                            | {{VC6ShortcutVectorsBatch.Definition}} |
 | VC6Lossless            | {{VC6Lossless.TypeSymbol}}            | {{VC6Lossless.TypeSize}}           | {{VC6Lossless.Definition}}             |
@@ -44,7 +44,7 @@ bitrate value in bits per second for one frame period.
 
 ::: {custom-style="smpte-note"}
 NOTE: `VC6ShortcutVectorsBatch` contains only unique values. In theory there are 65536 different permutations of ShortcutVector.
-In practise only a few are actually created by an encoder. This property can be used by a decoder to help determine the resources
+In practice only a few are actually created by an encoder. This property can be used by a decoder to help determine the resources
 required for decoding the generic container.
 :::
 
@@ -54,7 +54,7 @@ Table 7 - Elements in the VC6EchelonProperties Set
 
 | Symbol                | type                               | Len                            | Meaning                                |
 | ----------------------|------------------------------------|--------------------------------|----------------------------------------|
-| VC6EchelonProperties  | Set UL                             | 16                             | [**R**] VC6EchelonProperties Key       |
-| VC6EchelonIndex       | {{VC6EchelonIndex.TypeSymbol}}     | {{VC6EchelonIndex.TypeSize}}   | [**R**] {{VC6EchelonIndex.Definition}} |
-| VC6SampledHeight      | {{VC6SampledHeight.TypeSymbol}}    | {{VC6SampledHeight.TypeSize}}  | [**R**] {{VC6SampledHeight.Definition}}|
-| VC6SampledWidth       | {{VC6SampledWidth.TypeSymbol}}     | {{VC6SampledWidth.TypeSize}}   | [**R**] {{VC6SampledWidth.Definition}} |
+| VC6EchelonProperties  | Set UL                             | 16                             | {{VC6EchelonProperties.Definition}}    |
+| VC6EchelonIndex       | {{VC6EchelonIndex.TypeSymbol}}     | {{VC6EchelonIndex.TypeSize}}   | {{VC6EchelonIndex.Definition}}         |
+| VC6SampledHeight      | {{VC6SampledHeight.TypeSymbol}}    | {{VC6SampledHeight.TypeSize}}  | {{VC6SampledHeight.Definition}}        |
+| VC6SampledWidth       | {{VC6SampledWidth.TypeSymbol}}     | {{VC6SampledWidth.TypeSize}}   | {{VC6SampledWidth.Definition}}         |
