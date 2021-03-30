@@ -1,6 +1,29 @@
 /** @module submission-xml-to-json
  *
  * find some submissions, convert to json and put in metadata folder
+ *
+ * Algorithm needs tweaking:
+ * 1. Create empty JSON metadata register MR with a Register Submission (RS) child
+ *    * MR = {Groups:{}, Types:{} ..., RS:{Groups:{} ... , message:{error:[], ..}}}
+ * 2. read in all discrete registers from snapshot
+ *    * add and read messages to MR.message
+ * 3. read in all submission entries. For each entry
+ *    a. create an MR.RS.REGISTER object indexed by Symbol
+ *    b. add in read / parsing messages to MR.message
+ *    c. for any entry with a type
+ *        * add MR.RS.REGISTER.TypeSymbol = fn(loookup Type UL & return Type Symbol)
+ *        * add MR.RS.REGISTER.TypeSize = fn(loookup Type UL & return Type Size text)
+ *    d. for each entry in a group
+ *        * copy entry JSON to MR.RS.Groups.ENTRY._Contents.SYMBOL to allow
+ *          mustache iteration of the group elements
+ *
+ * 5. QA
+ *   a. check for collisions & log errors to MR.RS.message
+ *   b. inspect RS.Groups for IsOptional & update definition with [Req] or [Opt], log errors
+ *   c. log unresolved types
+ *   g. log unresolved groups
+ * 6. export MR.RS as register-submission.json
+ * 7. export MR.RS.messages as register-submission-messages.json
  */
 
 const fs = require('fs')
@@ -18,12 +41,17 @@ const source_paths = [
     "src/register/30MR-REG-DD-ST2117-10-types.xml",
 ]
 const types_paths = [
+    "src/register/30MR-REG-DD-ST2117-10-types.xml",
     "src/metadata/Types-snapshot.xml",
+]
+const groups_paths = [
+    "src/register/30MR-REG-DD-ST2117-10-groups.xml",
+    "src/metadata/Groups-snapshot.xml",
 ]
 
 /** refactor the entry XML to a JSON that's suitable for substitution
  *
- * The incoming JSON creates an array of annonimous Entry objects
+ * The incoming JSON creates an array of anonimous Entry objects
  * The outer most object is xxxxRegister and  is handled in a for loop
  * {
  *    "ElementsRegister": {

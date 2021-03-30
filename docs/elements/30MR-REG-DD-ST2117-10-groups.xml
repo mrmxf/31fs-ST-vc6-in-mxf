@@ -17,7 +17,7 @@
             <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.01018104</UL><!-- FFV1 subdescriptor is ....03 -->
             <Kind>LEAF</Kind>
             <Name>VC6 Sub-Descriptor</Name>
-            <Definition>[Req] ST 2117 VC6 Sub-Descriptor</Definition>
+            <Definition>ST 2117 VC6 Sub-Descriptor</Definition>
             <Applications>MXF</Applications>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
@@ -70,7 +70,7 @@
             <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.01018105</UL>
             <Kind>LEAF</Kind>
             <Name>ST 2117 VC6 Echelon Properties</Name>
-            <Definition>[Req] Property identifiers for and Echelon in a VC-6 bitstream</Definition>
+            <Definition>Property identifiers for and Echelon in a VC-6 bitstream</Definition>
             <DefiningDocument>SMPTE ST 2117-1</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.01018110</Parent>
@@ -79,15 +79,15 @@
             <Contents>
                 <Record>
                     <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0a000000</UL>
-                    <IsOptional>true</IsOptional>
+                    <IsOptional>false</IsOptional>
                 </Record>
                 <Record>
                     <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0b000000</UL>
-                    <IsOptional>true</IsOptional>
+                    <IsOptional>false</IsOptional>
                 </Record>
                 <Record>
                     <UL>urn:smpte:ul:060e2b34.0101010e.0401060d.0c000000</UL>
-                    <IsOptional>true</IsOptional>
+                    <IsOptional>false</IsOptional>
                 </Record>
             </Contents>
         </Entry>
