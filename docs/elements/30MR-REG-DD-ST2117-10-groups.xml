@@ -18,7 +18,6 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Sub-Descriptor</Name>
             <Definition>ST 2117 VC6 Sub-Descriptor</Definition>
-            <Applications>MXF</Applications>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.01015900</Parent>
@@ -73,7 +72,7 @@
             <Definition>Property identifiers for and Echelon in a VC-6 bitstream</Definition>
             <DefiningDocument>SMPTE ST 2117-1</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
-            <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.01018110</Parent>
+            <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.01018104</Parent>
             <IsConcrete>true</IsConcrete>
             <KLVSyntax>06 53</KLVSyntax>
             <Contents>

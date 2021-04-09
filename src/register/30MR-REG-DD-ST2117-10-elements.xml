@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml-model href="../../register-snapshot/ElementsRegister.xsd" ?> -->
+
 <!-- Metadata tags to support XML file editing -->
 <!-- author= Bruce Devlin (bruce@mrmxf.com) -->
 <!-- summary_of_edit= Elemenets Register for ST 2117-10 VC-6 in MXF -->
@@ -18,7 +20,7 @@
             <Kind>NODE</Kind>
             <Name>VC6 Parameters</Name>
             <Definition>Parameters about VC6 Picture Coding</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
         </Entry>
         <Entry>
@@ -29,8 +31,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 GC Upsamplers Batch</Name>
             <Definition>Unordered Batch of UInt8 Upsampler Indices used in the Generic Container</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.0d020101.03450000</Type>
         </Entry>
         <Entry>
@@ -41,8 +44,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Shortcut Vector Range</Name>
             <Definition>Unordered Batch of unique UInt16 ShortcutVector values used in the Generic Container</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.0d020101.03450000</Type>
         </Entry>
         <Entry>
@@ -53,8 +57,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Lossless</Name>
             <Definition>Non-zero if the encoder created a lossless bitstream</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
         </Entry>
         <Entry>
@@ -65,8 +70,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 CBR</Name>
             <Definition>Non-zero if the encoder intended a constant bitrate stream</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
         </Entry>
         <Entry>
@@ -77,8 +83,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Bitrate</Name>
             <Definition>Target CBR bitrate or Maximum VBR bitrate in bits per second</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010400.00000000</Type>
         </Entry>
         <Entry>
@@ -89,8 +96,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Compressed Frame Max</Name>
             <Definition>Maximum Size in bits of a Compressed Frame in the Generic Container</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010400.00000000</Type>
         </Entry>
         <Entry>
@@ -101,8 +109,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Compressed Frame Avg</Name>
             <Definition>Average Size in bits of a Compressed Frame in the Generic Container</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010400.00000000</Type>
         </Entry>
         <Entry>
@@ -113,8 +122,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Max No Of Echelons</Name>
             <Definition>Maximum Number of Echelons in any Frame in the Generic Container</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
         </Entry>
         <Entry>
@@ -125,7 +135,7 @@
             <Kind>LEAF</Kind>
             <Name>File Descriptors</Name>
             <Definition>Specifies a vector of an ordered set of references to VC6EchelonProperties sets</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <ContextScope>UnknownContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.05060e01.00000000</Type>
@@ -139,8 +149,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Echelon Index</Name>
             <Definition>[Req] Signed Index of this Echelon as identified in ST 2117-1:2020 §4.8.9</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
         </Entry>
         <Entry>
@@ -151,8 +162,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Sampled Height</Name>
             <Definition>[Req] Sampled Height of the reconstructed pixel grid for the echelon</Definition>
-            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
         </Entry>
         <Entry>
@@ -163,7 +175,9 @@
             <Kind>LEAF</Kind>
             <Name>VC6 Sampled Width</Name>
             <Definition>[Req] Sampled Width of the reconstructed pixel grid for the echelon</Definition>
+            <DefiningDocument>SMPTE 330M</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
+            <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
         </Entry>
     </Entries>

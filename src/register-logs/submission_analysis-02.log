@@ -1,0 +1,139 @@
+INFO: Friday, 09 April 2021 08:18AM UTC -- Process a Submission / Proposal
+INFO: ----------------- Analysing entire Registers ----------------
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: upload -------------
+INFO: Filename: 30MR-REG-DD-ST2117-10-elements.xml
+INFO: Entries CREATED:  13   UPDATED:   0
+INFO: Filename: 30MR-REG-DD-ST2117-10-labels.xml
+ERROR: The current proposal XML file (30MR-REG-DD-ST2117-10-labels.xml) cannot be loaded -- it will be skipped. The rest of the proposal will still be processed. Details: The file "/var/transient.file.cache/5ab7fa34-0ca2-44e4-819f-3c2e4302abac/upload/30MR-REG-DD-ST2117-10-labels.xml" does not conform to the relevant XSD. Details: Element '{http://www.smpte-ra.org/schemas/400/2012}ContextScope': This element is not expected. Expected is ( {http://www.smpte-ra.org/schemas/400/2012}IsDeprecated )., line 23
+INFO: Filename: 30MR-REG-DD-ST2117-10-essence.xml
+ERROR: The current proposal XML file (30MR-REG-DD-ST2117-10-essence.xml) cannot be loaded -- it will be skipped. The rest of the proposal will still be processed. Details: Root XML Element name and/or namespace are not recognised
+INFO: Filename: 30MR-REG-DD-ST2117-10-types.xml
+INFO: Entries CREATED:   1   UPDATED:   1
+INFO: Filename: 30MR-REG-DD-ST2117-10-groups.xml
+INFO: Entries CREATED:   2   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Edit-Specific Checks for Applied Proposal: upload -------------
+WARNING: 2 LEAF entries created by proposal that do not have a value for "DefiningDocument": every LEAF entry should have a value for "DefiningDocument" (if possible) otherwise it is very difficult for someone reading the Registers later to find out where an entry came from (once the Submission / Proposal has been merged into the Registers).
+WARNING: 1 entries created by proposal that have a value for "Applications": the use of this field is not recommended because no consistent means of populating this field has been established.
+INFO: -------------------------------------------------------------
+INFO: ----------------- Analysing entire Registers ----------------
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.03000000 - Symbol: VC6Lossless - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.05000000 - Symbol: VC6Bitrate - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.04000000 - Symbol: VC6CBR - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.07000000 - Symbol: VC6CompressedFrameAvg - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.08000000 - Symbol: VC6MaxNoOfEchelons - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.06000000 - Symbol: VC6CompressedFrameMax - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.0a000000 - Symbol: VC6EchelonIndex - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.02000000 - Symbol: VC6ShortcutVectorsBatch - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.01000000 - Symbol: VC6GCUpsamplersBatch - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.0b000000 - Symbol: VC6SampledHeight - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.0c000000 - Symbol: VC6SampledWidth - Details: Entry must specify ContextScope because it is a Leaf.
+INFO: -------------------------------------------------------------
+INFO: 
+############################################################################################
+############################################################################################
+Your Submission / Proposal has now been applied to the Registers. The resulting Registers have been analysed and written out to XML files.
+All 'accepted', 'mature' and 'draft' Submissions / Proposals will now be applied to the Registers to check for any conflicts. The resulting Registers will be analysed then discarded. Any problems will be reported below.
+If problems were reported above these may be repeated below, depending on the nature of the problem.
+It is also possible that there will be problems reported below that have no relation to your Submission / Proposal -- that is, there may be problems reported below that would have existed even if your Submission / Proposal had not been applied. Such problems can be ignored for the purposes of evaluating your Submission / Proposal. Contact the Registers Editor if you are uncertain about a reported problem.
+############################################################################################
+############################################################################################
+INFO: ------------- Apply Proposal: 82_RS_2019-06-19--ST430-17-SMS_OMB -------------
+INFO: Filename: 30MR-REG-DD-ST430-17-elements.xml
+INFO: Entries CREATED:  40   UPDATED:   0
+INFO: Filename: 30MR-REG-DD-ST430-17-types.xml
+INFO: Entries CREATED:   6   UPDATED:   0
+INFO: Filename: 30MR-REG-DD-ST430-17-groups.xml
+INFO: Entries CREATED:  36   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 87_WR_2020-02-05--ST2124-JPEGXS-MXFGC -------------
+INFO: Filename: 30MR-REG-DD-ST2124-labels.xml
+INFO: Entries CREATED:  14   UPDATED:   0
+INFO: Filename: 30MR-REG-DD-ST2124-elements.xml
+INFO: Entries CREATED:  10   UPDATED:   0
+INFO: Filename: 30MR-REG-DD-ST2124-groups.xml
+INFO: Entries CREATED:   1   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 92_PT_2020-06-05--Class13_AES-31-3-ADL -------------
+INFO: Filename: 30MR-REG-DD-Class13-AES-31-3-ADL-labels.xml
+INFO: Entries CREATED:   2   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 96_TH_2020-11-25--Class13_AMWA_AS11_X6_Labels -------------
+INFO: Filename: 30MR-REG-DD-AMWA_Class13_for_AS11_X6-B-labels.xml
+INFO: Entries CREATED:   1   UPDATED:   0
+INFO: Filename: 30MR-REG-DD-AMWA_Class13_for_AS11_X6-A-labels.xml
+INFO: Entries CREATED:   1   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 97_TH_2021-01-29--ST379-2-MXF-ContrainedGC-Update -------------
+INFO: Filename: 30MR-REG-CORR-ContainerConstraintsSubDescriptor-groups.xml
+INFO: Entries CREATED:   0   UPDATED:   1
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 100_DT_2021-02-16--ST377-42-MXF-MCA-Labels -------------
+INFO: Filename: 30MR-REG-DD-ST377-42-labels.xml
+INFO: Entries CREATED:  38   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 80_CS_2019-02-25--ST377-4-MXFMultiChannelAudio -------------
+INFO: Filename: 30MR-REG-DD-ST377-4-Revision-Groups.xml
+INFO: Entries CREATED:   0   UPDATED:   1
+INFO: Filename: 30MR-REG-DD-ST377-4-Revision-Elements.xml
+INFO: Entries CREATED:   7   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 89_PL_2020-04-23--ST2067-40-IMF-App4 -------------
+INFO: Filename: 31FS-REG-DD-App4-types-20200113.xml
+WARNING: Register: Types - UL: urn:smpte:ul:060e2b34.01040101.02020102.00000000 - Symbol: TransferCharacteristicType - Details: Auto-merge carried out -- the field "allowed_values" has already been edited.
+(Note that this is the name of the field in the internal data model and may be different to the XML name.)
+The requested edit and the previous edit have been automatically merged together. This process has been completed successfully and so probably no action needs to be taken -- however, it would be a good idea to confirm that the auto-merged value looks sensible. If not, then either edit the proposals involved or go ahead with this auto-merged value and then make a subsequent edit to the affected Register.
+The requested edit changed the value from:
+[EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01010000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01020000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01030000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01040000>, EnumVal<urn:smpte:ul:060e2b34.04010106.04010101.01050000>, EnumVal<urn:smpte:ul:060e2b34.04010106.04010101.01060000>, EnumVal<urn:smpte:ul:060e2b34.04010108.04010101.01070000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01080000>, EnumVal<urn:smpte:ul:060e2b34.0401010e.04010101.01090000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010a0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010b0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010c0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010d0000>]
+to:
+[EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01010000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01020000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01030000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01040000>, EnumVal<urn:smpte:ul:060e2b34.04010106.04010101.01050000>, EnumVal<urn:smpte:ul:060e2b34.04010106.04010101.01060000>, EnumVal<urn:smpte:ul:060e2b34.04010108.04010101.01070000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01080000>, EnumVal<urn:smpte:ul:060e2b34.0401010e.04010101.01090000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010a0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010b0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010c0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010d0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01120000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01130000>]
+However, meanwhile another edit had already changed the value to:
+[EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01010000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01020000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01030000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01040000>, EnumVal<urn:smpte:ul:060e2b34.04010106.04010101.01050000>, EnumVal<urn:smpte:ul:060e2b34.04010106.04010101.01060000>, EnumVal<urn:smpte:ul:060e2b34.04010108.04010101.01070000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01080000>, EnumVal<urn:smpte:ul:060e2b34.0401010e.04010101.01090000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010a0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010b0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010c0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010d0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010e0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010f0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01100000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01110000>]
+The auto-merged value for this field combines both edits. This auto-merged value will be used for this field:
+[EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01010000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01020000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01030000>, EnumVal<urn:smpte:ul:060e2b34.04010101.04010101.01040000>, EnumVal<urn:smpte:ul:060e2b34.04010106.04010101.01050000>, EnumVal<urn:smpte:ul:060e2b34.04010106.04010101.01060000>, EnumVal<urn:smpte:ul:060e2b34.04010108.04010101.01070000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01080000>, EnumVal<urn:smpte:ul:060e2b34.0401010e.04010101.01090000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010a0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010b0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010c0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010d0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010e0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.010f0000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01100000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01110000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01120000>, EnumVal<urn:smpte:ul:060e2b34.0401010d.04010101.01130000>]
+INFO: Entries CREATED:   0   UPDATED:   1
+INFO: Filename: 31FS-REG-DD-App4-labels-20200113.xml
+INFO: Entries CREATED:   2   UPDATED:   1
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 94_JG_2020-07-29--RDD54-ARRIRAW-MXFGC -------------
+INFO: Filename: 30MR-REG-DD-RDD54-labels.xml
+INFO: Entries CREATED:   3   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 95_KM_2020-09-17--RDD48-FFV1-Am1 -------------
+INFO: Filename: RDD48-2018_AMD1_Groups-WD.20200917.xml
+INFO: Entries CREATED:   1   UPDATED:   0
+INFO: Filename: RDD48-2018_AMD1_Elements-WD.20200917.xml
+INFO: Entries CREATED:   7   UPDATED:   0
+INFO: Filename: RDD48-2018_AMD1_Labels-WD.20200917.xml
+INFO: Entries CREATED:   7   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 98_TY_2021-02-01--RDD18-Rev-Acq-Meta -------------
+INFO: Filename: 30MR-REG-DD-RDD-18-types-2021-02-01.xml
+INFO: Entries CREATED:   4   UPDATED:   4
+INFO: Filename: 30MR-REG-DD-RDD-18-groups-2020-12-11.xml
+INFO: Entries CREATED:   0   UPDATED:   3
+INFO: Filename: 30MR-REG-DD-RDD-18-elements-2021-02-01.xml
+INFO: Entries CREATED:  13   UPDATED:   7
+INFO: -------------------------------------------------------------
+INFO: ------------- Apply Proposal: 99_RY_2021-02-12--Class14-Dolby-ST377-42-IABChSG -------------
+INFO: Filename: 30MR-REG-Class14-Dolby-ST377-42-IABChSG-labels.xml
+INFO: Entries CREATED:  12   UPDATED:   0
+INFO: -------------------------------------------------------------
+INFO: ----------------- Analysing entire Registers ----------------
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.03000000 - Symbol: VC6Lossless - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.05000000 - Symbol: VC6Bitrate - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.04000000 - Symbol: VC6CBR - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.07000000 - Symbol: VC6CompressedFrameAvg - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.08000000 - Symbol: VC6MaxNoOfEchelons - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.06000000 - Symbol: VC6CompressedFrameMax - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.0a000000 - Symbol: VC6EchelonIndex - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.02000000 - Symbol: VC6ShortcutVectorsBatch - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.01000000 - Symbol: VC6GCUpsamplersBatch - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.0b000000 - Symbol: VC6SampledHeight - Details: Entry must specify ContextScope because it is a Leaf.
+ERROR: Register: Elements - UL: urn:smpte:ul:060e2b34.0101010e.0401060d.0c000000 - Symbol: VC6SampledWidth - Details: Entry must specify ContextScope because it is a Leaf.
+INFO: -------------------------------------------------------------
+INFO: 
+****************************************
+*  Total ERRORS:  24    WARNINGS:   3  *
+****************************************

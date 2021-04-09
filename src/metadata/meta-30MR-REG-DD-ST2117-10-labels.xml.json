@@ -1,7 +1,7 @@
 {
   "MXFGCVC6BitstreamTypes": {
     "Register": "Labels",
-    "NamespaceName": "http://www.smpte-ra.org/reg/400/2012",
+    "NamespaceName": "http://www.smpte-ra.org/reg/400/2012/13/1/aaf",
     "Symbol": "MXFGCVC6BitstreamTypes",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02240000",
     "Kind": "NODE",
@@ -12,7 +12,7 @@
   },
   "MXFGCVC6FrameWrappedGenericBitstream": {
     "Register": "Labels",
-    "NamespaceName": "http://www.smpte-ra.org/reg/400/2012",
+    "NamespaceName": "http://www.smpte-ra.org/reg/400/2012/13/1/aaf",
     "Symbol": "MXFGCVC6FrameWrappedGenericBitstream",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02240100",
     "Kind": "LEAF",
@@ -23,7 +23,7 @@
   },
   "MXFGCVC6FrameWrappedProgressivePictures": {
     "Register": "Labels",
-    "NamespaceName": "http://www.smpte-ra.org/reg/400/2012",
+    "NamespaceName": "http://www.smpte-ra.org/reg/400/2012/13/1/aaf",
     "Symbol": "MXFGCVC6FrameWrappedProgressivePictures",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02240200",
     "Kind": "LEAF",
@@ -34,7 +34,7 @@
   },
   "MXFGCVC6FrameWrappedInterlacedPictures": {
     "Register": "Labels",
-    "NamespaceName": "http://www.smpte-ra.org/reg/400/2012",
+    "NamespaceName": "http://www.smpte-ra.org/reg/400/2012/13/1/aaf",
     "Symbol": "MXFGCVC6FrameWrappedInterlacedPictures",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02240300",
     "Kind": "LEAF",
@@ -58,7 +58,7 @@
     "Register": "Labels",
     "NamespaceName": "http://www.smpte-ra.org/reg/400/2012",
     "Symbol": "VC6UnrestrictedBitstream",
-    "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02210100",
+    "UL": "urn:smpte:ul:060e2b34.0401010d.04010202.01470100",
     "Kind": "LEAF",
     "Name": "VC-6 Unrestricted bitstream",
     "Definition": "Identifies a VC-6 bitstream with no constraints",

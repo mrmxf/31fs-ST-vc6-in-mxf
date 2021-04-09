@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.smpte-ra.org/schemas/2003/2012" targetNamespace="http://www.smpte-ra.org/schemas/2003/2012" version="1.0">
+	<xs:element name="TypesRegister">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Entries" form="qualified" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Entry" type="tns:TypeEntry" form="qualified" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="TypeEntry">
+		<xs:sequence>
+			<xs:element name="Register" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="NamespaceName" type="xs:string" form="qualified"/>
+			<xs:element name="Symbol" type="xs:string" form="qualified"/>
+			<xs:element name="UL" type="xs:string" form="qualified"/>
+			<xs:element name="Kind" form="qualified" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="NODE"/>
+						<xs:enumeration value="LEAF"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Name" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Definition" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Applications" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Notes" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="DefiningDocument" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="IsDeprecated" type="xs:boolean" form="qualified"/>
+			<xs:element name="ContextScope" form="qualified" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="DefinedContext"/>
+						<xs:enumeration value="AbstractContext"/>
+						<xs:enumeration value="UnknownContext"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TypeKind" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="TypeSize" type="xs:long" form="qualified" minOccurs="0"/>
+			<xs:element name="BaseType" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="TypeQualifiers" form="qualified" minOccurs="0">
+				<xs:simpleType>
+					<xs:list>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="isNumeric"/>
+								<xs:enumeration value="isSigned"/>
+								<xs:enumeration value="isIdentified"/>
+								<xs:enumeration value="isOrdered"/>
+								<xs:enumeration value="isCountImplicit"/>
+								<xs:enumeration value="isSizeImplicit"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:list>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Facets" form="qualified" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Facet" type="tns:FacetType" form="qualified" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FacetType">
+		<xs:sequence>
+			<xs:element name="Symbol" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Name" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Type" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Value" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="UL" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Definition" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Applications" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="Notes" type="xs:string" form="qualified" minOccurs="0"/>
+			<xs:element name="IsDeprecated" type="xs:boolean" form="qualified"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
