@@ -2,9 +2,24 @@
 
 Mapping VC-6 (**SMPTE ST 2117-1**) into MXF as document **SMPTE ST 2117-10**
 
-# Installation
+## recommended usage
 
-The tooing uses the Mr MXF [zmp] tools based on [Pandoc].
+1. sign up for a gitpod account by signing into `gitpod.io` with gihub
+2. open this repo with gitpod by opening a browser with this url:
+  `gitpod.io/#https://github.com/mrmxf/31fs-ST-vc6-in-mxf`
+3. open up a terminal window (Ctrl+Shift+`)
+4. Type `git submodule update`
+5. Type `yarn`
+
+Periodically, you may have to install pandoc
+
+* `sudo dpkg -i ./zmp/tools/pandoc.deb`
+
+You're good to go. Type `zmp/do --help`
+
+## Offline Installation
+
+The tooling uses the Mr MXF [zmp] tools based on [Pandoc].
 
 The tools have been tested on AWS, Ubuntu, Mac and Windows 10 with WSL running Ubuntu.
 They won't work in windows CMD or powershell. The goal is to migrate them to a service.

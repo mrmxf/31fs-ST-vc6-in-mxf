@@ -1,7 +1,7 @@
 {
   "FrameWrappedVC6PictureElement": {
     "Register": "Essence",
-    "NamespaceName": "http://www.smpte-ra.org/reg/2088/2019",
+    "NamespaceName": "http://www.smpte-ra.org/reg/2088/2019/13/1/aaf",
     "Symbol": "FrameWrappedVC6PictureElement",
     "UL": "urn:smpte:ul:060E2B34.01020101.0D010301.157f1f7f",
     "Kind": "LEAF",
