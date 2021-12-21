@@ -29,7 +29,7 @@ NOTE: `VC6SubDescriptor` is a child of `SubDescriptor` as specified in SMPTE ST
 :::
 
 ::: {custom-style="smpte-caption"}
-Table 5 - Elements in the `VC6SubDescriptor`
+Table 5 - Elements in the `VC6SubDescriptor` Set
 :::
 
 | Symbol                      | type                                     | Len                                  | Req? | Meaning                                  |
