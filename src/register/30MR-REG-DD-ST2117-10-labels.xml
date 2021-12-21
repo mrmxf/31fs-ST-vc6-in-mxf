@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- <?xml-model href="../../register-snapshot/LabelsRegister.xsd" ?> -->
-<!-- Metadata tags to support XML file editing -->
-<!-- author= Bruce Devlin (bruce@mrmxf.com) -->
-<!-- summary_of_edit= Labels Register for ST 2117-10 VC-6 in MXF -->
-<!--  -->
-<!-- DO NOT EDIT THIS TAG -->
-<!-- master_commit_tag=v000000082 -->
-<!-- DO NOT EDIT THIS TAG -->
-<!--  -->
+<!-- <?xml-model href="../../register-snapshot/LabelsRegister.xsd" ?>   -->
+<!--                                                                    -->
+<!-- Metadata tags to support XML file editing                          -->
+<!-- author= Bruce Devlin (bruce@mrmxf.com)                             -->
+<!-- summary_of_edit= Labels Register for ST 2117-10 VC-6 in MXF        -->
+<!--                                                                    -->
 
 <LabelsRegister xmlns="http://www.smpte-ra.org/schemas/400/2012">
     <Entries>
@@ -15,10 +12,10 @@
         <Entry>
             <Register>Labels</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/aaf</NamespaceName>
-            <Symbol>MXFGCVC6BitstreamTypes</Symbol>
+            <Symbol>MXFGCVC6BitstreamContainerLabels</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02240000</UL>
             <Kind>NODE</Kind>
-            <Name>MXF-GC VC-6 bitstream Typess</Name>
+            <Name>MXF-GC VC-6 bitstream Types</Name>
             <Definition>Identifies VC-6 bitstream Types in MXF</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
@@ -29,7 +26,7 @@
             <Symbol>MXFGCVC6FrameWrappedGenericBitstream</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02240100</UL>
             <Kind>LEAF</Kind>
-            <Name>VC6 Frame Wrapped Generic bitstream</Name>
+            <Name>VC-6 Frame Wrapped Generic bitstream</Name>
             <Definition>Identifies VC-6 Frame Wrapped Generic bitstreams in MXF</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
@@ -40,7 +37,7 @@
             <Symbol>MXFGCVC6FrameWrappedProgressivePictures</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02240200</UL>
             <Kind>LEAF</Kind>
-            <Name>VC6 Frame Wrapped Progressive Pictures</Name>
+            <Name>VC-6 Frame Wrapped Progressive Pictures</Name>
             <Definition>Identifies VC-6 bitstreams of Progressive Pictures in MXF</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
@@ -51,7 +48,7 @@
             <Symbol>MXFGCVC6FrameWrappedInterlacedPictures</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.0d010301.02240300</UL>
             <Kind>LEAF</Kind>
-            <Name>VC6 Frame Wrapped Interlaced Pictures</Name>
+            <Name>VC-6 Frame Wrapped Interlaced Pictures</Name>
             <Definition>Identifies VC-6 bitstreams of Interlaced Pictures in MXF</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
@@ -60,7 +57,7 @@
         <Entry>
             <Register>Labels</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/400/2012</NamespaceName>
-            <Symbol>VC6Bitstreams</Symbol>
+            <Symbol>VC6BitstreamCoding</Symbol>
             <UL>urn:smpte:ul:060e2b34.0401010d.04010202.01470000</UL>
             <Kind>NODE</Kind>
             <Name>VC-6 bitstreams</Name>

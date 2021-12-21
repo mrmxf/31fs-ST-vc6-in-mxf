@@ -1,0 +1,3 @@
+tasks:
+   - name: install pandoc
+     command: sudo dpkg -i ./zmp/tools/pandoc-amd64.deb

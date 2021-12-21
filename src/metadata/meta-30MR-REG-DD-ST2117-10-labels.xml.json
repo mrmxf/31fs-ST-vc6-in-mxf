@@ -1,11 +1,11 @@
 {
-  "MXFGCVC6BitstreamTypes": {
+  "MXFGCVC6BitstreamContainerLabels": {
     "Register": "Labels",
     "NamespaceName": "http://www.smpte-ra.org/reg/400/2012/13/1/aaf",
-    "Symbol": "MXFGCVC6BitstreamTypes",
+    "Symbol": "MXFGCVC6BitstreamContainerLabels",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02240000",
     "Kind": "NODE",
-    "Name": "MXF-GC VC-6 bitstream Typess",
+    "Name": "MXF-GC VC-6 bitstream Types",
     "Definition": "Identifies VC-6 bitstream Types in MXF",
     "DefiningDocument": "SMPTE ST 2117-10",
     "IsDeprecated": "false"
@@ -16,7 +16,7 @@
     "Symbol": "MXFGCVC6FrameWrappedGenericBitstream",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02240100",
     "Kind": "LEAF",
-    "Name": "VC6 Frame Wrapped Generic bitstream",
+    "Name": "VC-6 Frame Wrapped Generic bitstream",
     "Definition": "Identifies VC-6 Frame Wrapped Generic bitstreams in MXF",
     "DefiningDocument": "SMPTE ST 2117-10",
     "IsDeprecated": "false"
@@ -27,7 +27,7 @@
     "Symbol": "MXFGCVC6FrameWrappedProgressivePictures",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02240200",
     "Kind": "LEAF",
-    "Name": "VC6 Frame Wrapped Progressive Pictures",
+    "Name": "VC-6 Frame Wrapped Progressive Pictures",
     "Definition": "Identifies VC-6 bitstreams of Progressive Pictures in MXF",
     "DefiningDocument": "SMPTE ST 2117-10",
     "IsDeprecated": "false"
@@ -38,15 +38,15 @@
     "Symbol": "MXFGCVC6FrameWrappedInterlacedPictures",
     "UL": "urn:smpte:ul:060e2b34.0401010d.0d010301.02240300",
     "Kind": "LEAF",
-    "Name": "VC6 Frame Wrapped Interlaced Pictures",
+    "Name": "VC-6 Frame Wrapped Interlaced Pictures",
     "Definition": "Identifies VC-6 bitstreams of Interlaced Pictures in MXF",
     "DefiningDocument": "SMPTE ST 2117-10",
     "IsDeprecated": "false"
   },
-  "VC6Bitstreams": {
+  "VC6BitstreamCoding": {
     "Register": "Labels",
     "NamespaceName": "http://www.smpte-ra.org/reg/400/2012",
-    "Symbol": "VC6Bitstreams",
+    "Symbol": "VC6BitstreamCoding",
     "UL": "urn:smpte:ul:060e2b34.0401010d.04010202.01470000",
     "Kind": "NODE",
     "Name": "VC-6 bitstreams",

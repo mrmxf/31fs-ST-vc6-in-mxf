@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- <?xml-model href="../../register-snapshot/TypesRegister.xsd" ?> -->
-<!-- Metadata tags to support XML file editing -->
-<!-- author= Bruce Devlin (bruce@mrmxf.com) -->
-<!-- summary_of_edit= Types Register for ST 2117-10 VC-6 in MXF -->
-<!--  -->
-<!-- DO NOT EDIT THIS TAG -->
-<!-- master_commit_tag=v000000082 -->
-<!-- DO NOT EDIT THIS TAG -->
-<!--  -->
+<!--                                                                 -->
+<!-- Metadata tags to support XML file editing                       -->
+<!-- author= Bruce Devlin (bruce@mrmxf.com)                          -->
+<!-- summary_of_edit= Types Register for ST 2117-10 VC-6 in MXF      -->
+<!--                                                                 -->
 
 <TypesRegister xmlns="http://www.smpte-ra.org/schemas/2003/2012">
     <Entries>
         <Entry>
             <Register>Types</Register>
             <NamespaceName>http://www.smpte-ra.org/reg/2003/2012</NamespaceName>
-            <Symbol>VC6SubDescriptorEchelonStrongReferenceVector</Symbol>
-            <UL>urn:smpte:ul:060e2b34.01040101.05060e01.00000000</UL>
+            <Symbol>VC6EchelonPropertiesStrongReference</Symbol>
+            <UL>urn:smpte:ul:060e2b34.01040101.05023200.00000000</UL>
             <Kind>LEAF</Kind>
-            <Name>VC6 SubDescriptor Echelon Strong Reference Vector</Name>
-            <DefiningDocument>SMPTE 330M</DefiningDocument>
+            <Name>VC-6 Echelon Properties Strong Reference</Name>
+            <DefiningDocument>ST 2117-10</DefiningDocument>
+            <IsDeprecated>false</IsDeprecated>
+            <ContextScope>UnknownContext</ContextScope>
+            <TypeKind>StrongReference</TypeKind>
+            <BaseType>urn:smpte:ul:060e2b34.027f0101.0d010101.01018105</BaseType>
+        </Entry>
+        <Entry>
+            <Register>Types</Register>
+            <NamespaceName>http://www.smpte-ra.org/reg/2003/2012</NamespaceName>
+            <Symbol>VC6EchelonPropertiesStrongReferenceArray</Symbol>
+            <UL>urn:smpte:ul:060e2b34.01040101.05061000.00000000</UL>
+            <Kind>LEAF</Kind>
+            <Name>VC-6 Echelon Properties Strong Reference in an ordered Array</Name>
+            <DefiningDocument>ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <ContextScope>UnknownContext</ContextScope>
             <TypeKind>VariableArray</TypeKind>
             <BaseType>urn:smpte:ul:060e2b34.01040101.05021c00.00000000</BaseType>
             <TypeQualifiers>isOrdered</TypeQualifiers>
-        </Entry>
-        <Entry>
-            <Register>Types</Register>
-            <NamespaceName>http://www.smpte-ra.org/reg/2003/2012</NamespaceName>
-            <Symbol>VC6EchelonPropertiesStrongReferenceSet</Symbol>
-            <UL>urn:smpte:ul:060e2b34.01040101.05050d00.00000000</UL>
-            <Kind>LEAF</Kind>
-            <Name>KLVDataDefinitionStrongReferenceSet</Name>
-            <Applications>AAF[1.1:]</Applications>
-            <DefiningDocument>SMPTE 330M</DefiningDocument>
-            <IsDeprecated>false</IsDeprecated>
-            <ContextScope>UnknownContext</ContextScope>
-            <TypeKind>Set</TypeKind>
-            <TypeSize>0</TypeSize>
-            <BaseType>urn:smpte:ul:060e2b34.01040101.05022000.00000000</BaseType>
-            <TypeQualifiers>isIdentified</TypeQualifiers>
         </Entry>
     </Entries>
 </TypesRegister>

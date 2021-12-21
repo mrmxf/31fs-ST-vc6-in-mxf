@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- <?xml-model href="../../register-snapshot/EssenceRegister.xsd" ?> -->
-<!-- Metadata tags to support XML file editing -->
-<!-- author= Essence Bruce Devlin (bruce@mrmxf.com) -->
-<!-- summary_of_edit= Register for ST 2117-10 VC-6 in MXF -->
-<!--  -->
-<!-- DO NOT EDIT THIS TAG -->
-<!-- master_commit_tag=v000000082 -->
-<!-- DO NOT EDIT THIS TAG -->
-<!--  -->
+<!-- <?xml-model href="../../register-snapshot/EssenceRegister.xsd" ?>  -->
+<!--                                                                    -->
+<!-- Metadata tags to support XML file editing                          -->
+<!-- author= Bruce Devlin (bruce@mrmxf.com)                             -->
+<!-- summary_of_edit= Essence Register for ST 2117-10 VC-6 in MXF       -->
+<!--                                                                    -->
 
 <EssenceRegister xmlns="http://www.smpte-ra.org/schemas/2088/2019">
     <Entries>

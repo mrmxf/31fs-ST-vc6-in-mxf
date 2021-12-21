@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>inc-draft-st-000-title-block</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div data-custom-style="Title">
+<p>Mapping VC-6 into the MXF Generic Container</p>
+</div>
+<div data-custom-style="Subtitle">
+<p>Warning</p>
+</div>
+<div data-custom-style="abstract">
+<p>This document is an unpublished, confidential work under development and shall not be referred to as a SMPTE Standard, Recommended Practice, or Engineering Guideline. It is distributed for review and comment; distribution does not constitute publication. Recipients of this document are strongly encouraged to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+</div>
+<div data-custom-style="smpte-hint">
+<p><strong>Information for document editors</strong></p>
+</div>
+<ul>
+<li><span data-custom-style="smpte-ch-hint">This template is designed to focus on content and not on style. This means that editors should:</span>
+<ul>
+<li><span data-custom-style="smpte-ch-hint">Refrain from adding styles inline unless absolutely necessary</span></li>
+<li><span data-custom-style="smpte-ch-hint">Refrain from modifying styles unless absolutely necessary</span></li>
+<li><span data-custom-style="smpte-ch-hint">Use the sample styles &amp; layouts for all headings, figures, tables and math</span></li>
+<li><span data-custom-style="smpte-ch-hint">Use the supplied auto numbering styles for headings and annexes</span></li>
+</ul></li>
+<li><span data-custom-style="smpte-ch-hint">In the event that the content cannot be adequately expressed using this template, contact SMPTE HQ.</span>
+<ul>
+<li><span data-custom-style="smpte-ch-boilerplate">The blue text (like this sentence) is editing information or boilerplate. This is information used by SMPTE HQ for publication and should not be changed by the author.</span></li>
+<li>The document editor must fill in the fields in black before submitting it to the Drafting Group.</li>
+<li><span data-custom-style="smpte-ch-hint">The red text (like this sentence) is helpful information that is not part of the final document. This information <strong>shall be deleted</strong> prior to FCD Ballot.</span></li>
+<li><span data-custom-style="smpte-ch-hint">The last page of this document has editing hints and a list of useful reference documents.</span> :::</li>
+</ul></li>
+</ul>
+<p><span data-custom-style="smpte-ch-boilerplate">Project Group:</span> <em>DG-VC-6-MXF</em></p>
+<p><span data-custom-style="smpte-ch-boilerplate">Project Technology Committee:</span> TC-31FS</p>
+<p><span data-custom-style="smpte-ch-boilerplate">Document type:</span> <em>ST</em></p>
+<p><span data-custom-style="smpte-ch-boilerplate">Document state:</span> <em>WD</em></p>
+<p><span data-custom-style="smpte-ch-boilerplate">Project chair(s):</span> <em>Bruce Devlin</em></p>
+<p><span data-custom-style="smpte-ch-boilerplate">Document editor(s):</span> <em>Bruce Devlin</em></p>
+<p><span data-custom-style="smpte-ch-boilerplate">Document number:</span> <em>2117-10</em></p>
+<p><span data-custom-style="smpte-ch-boilerplate">Document title:</span> <em>Mapping VC-6 into the MXF Generic Container</em></p>
+<div data-custom-style="smpte-boilerplate">
+<p><strong>Title Page</strong></p>
+</div>
+<div data-custom-style="smpte-boilerplate">
+<p>This page will be provided by SMPTE HQ Staff.</p>
+</div>
+<div data-custom-style="smpte-hint">
+<p>See AG-16 clause 3.1 (Title Page), and ISO Directive Part 2 clause 11 (Title).</p>
+</div>
+<div data-custom-style="smpte-proposal-block">
+<p>Proposed SMPTE Standard</p>
+<p>This document is subject to change Copyright (C) 2021 SMPTE All rights reserved</p>
+</div>
+<h1 id="foreword">Foreword</h1>
+<div data-custom-style="smpte-hint">
+<p>See AG-16 3.2 (Foreword), and ISO Directive Part 2 clause 12 (Foreword).</p>
+</div>
+<p><span data-custom-style="smpte-ch-boilerplate">SMPTE (the Society of Motion Picture and Television Engineers) is an internationally-recognized standards developing organization. Headquartered and incorporated in the United States of America, SMPTE has members in over 80 countries on six continents. SMPTE”s Engineering Documents, including Standards, Recommended Practices, and Engineering Guidelines, are prepared by SMPTE”s Technology Committees. Participation in these Committees is open to all with a bona fide interest in their work. SMPTE cooperates closely with other standards-developing organizations, including ISO, IEC and ITU. SMPTE Engineering Documents are drafted in accordance with the rules given in its Standards Operations Manual. This SMPTE Engineering Document was prepared by Technology Committee</span> TC-31FS.</p>
+<div data-custom-style="smpte-boilerplate">
+<p>Normative text is text that describes elements of the design that are indispensable or contains the conformance language keywords: “shall”, “should”, or “may”. Informative text is text that is potentially helpful to the user, but not indispensable, and can be removed, changed, or added editorially without affecting interoperability. Informative text does not contain any conformance keywords.</p>
+<p>All text in this document is, by default, normative, except: the Introduction, any section explicitly labeled as “Informative” or individual paragraphs that start with “Note:”</p>
+<p>The keywords “shall” and “shall not” indicate requirements strictly to be followed in order to conform to the document and from which no deviation is permitted. The keywords “should” and “should not” indicate that, among several possibilities, one is recommended as particularly suitable, without mentioning or excluding others; or that a certain course of action is preferred but not necessarily required; or that (in the negative form) a certain possibility or course of action is deprecated but not prohibited.</p>
+<p>The keywords “may” and “need not” indicate courses of action permissible within the limits of the document.</p>
+<p>The keyword “reserved” indicates a provision that is not defined at this time, shall not be used, and may be defined in the future. The keyword “forbidden” indicates “reserved” and in addition indicates that the provision will never be defined in the future.</p>
+<p>A conformant implementation according to this document is one that includes all mandatory provisions (“shall”) and, if implemented, all recommended provisions (“should”) as described. A conformant implementation need not implement optional provisions (“may”) and need not implement them as described. Unless otherwise specified, the order of precedence of the types of normative information in this document shall be as follows: Normative prose shall be the authoritative definition; Tables shall be next; then formal languages; then figures; and then any other language forms.</p>
+</div>
+<div data-custom-style="smpte-hint">
+<p>If this is a revision, a topical list of changes [should/shall be included here]</p>
+</div>
+<p> </p>
+<h1 id="introduction">Introduction</h1>
+<p>An Introduction section is <span data-custom-style="smpte-ch-hint">Optional / Conditional</span></p>
+<div data-custom-style="smpte-hint">
+<p>The introduction provides specific information or commentary about the technical content of the document, and about the reasons prompting its preparation. See AG-16 clause 3.3 (Introduction), AG-16 clause 4.2 (Conformance Terms), and ISO Directive Part 2 clause 13 (Introduction).</p>
+</div>
+<div data-custom-style="smpte-boilerplate">
+<p>This section is entirely informative and does not form an integral part of this Engineering Document.</p>
+</div>
+<p>SMPTE ST 2117-1 (VC-6) is a versatile intra-frame compression scheme. This document maps the VC-6 bitstream into the MXF Generic Container. The usage of this mapping to synchronise with other components such as audio and video is outside the scope of this document.</p>
+<p>The MXF Generic Container is a streamable Essence Container that can be placed on any suitable transport and stored. SMPTE ST 379-1 defines the MXF Generic Container as the native Essence Container in MXF files. SMPTE ST 379-2 defines the MXF Constrained Generic Container.</p>
+<p>Other MXF mapping documents such as SMPTE ST 382 define how Audio can be mapped and synchronised with the video stream in the MXF Generic Container.</p>
+<div data-custom-style="smpte-hint">
+<p>[Editors notes: The following paragraph will be replaced with the appropriate patent information during the SMPTE Headquarters publication process.]</p>
+</div>
+<div data-custom-style="smpte-boilerplate">
+<p>At the time of publication, no notice had been received by SMPTE claiming patent rights essential to the implementation of this Engineering Document. However, attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. SMPTE shall not be held responsible for identifying any or all such patent rights.</p>
+</div>
+<h1 id="scope">1 Scope</h1>
+<div data-custom-style="smpte-hint">
+<p>The scope clearly defines the subject of the document and the aspects covered, thereby indicating the limits of applicability of the document. See AG-16 clause 3.4 (Scope), and ISO Directive Part 2 clause 14 (Scope).</p>
+</div>
+<p>This Standard constrains the MXF mapping of SMPTE ST-2117-1 into the MXF Generic Container or MXF Constrained Generic Container.</p>
+<h1 id="normative-references">2 Normative References</h1>
+<div data-custom-style="smpte-hint">
+<p>The normative references clause lists, for information, those documents which are cited normatively in the document. See AG-16 clause 3.5 (Normative References), AG-16 clause 4.3 (Normative References to Standards and Recommended Practices), and the ISO Directives Clause 15 (Normative References).</p>
+</div>
+<div data-custom-style="smpte-boilerplate">
+<p>The following SMPTE STANDARD contains provisions that, through reference in this text, constitute provisions of this standard. [Dated references require that the specific edition cited shall be used as the reference]. Undated citations refer to the edition of the referenced document (including any amendments) current at the date of publication of this document. All SMPTE STANDARDs are subject to revision, and users of this engineering document are encouraged to investigate the possibility of applying the most recent edition of any undated reference.</p>
+</div>
+<p>SMPTE ST 326:2000, Television — SDTI Content Package Format (SDTI-CP)</p>
+<p>SMPTE ST 331:2011, Element and Metadata Definitions for the SDTI-CP</p>
+<p>SMPTE ST 377-1:2019, Material Exchange Format (MXF) — File Format Specification</p>
+<p>SMPTE ST 378:2004, Television — Material Exchange Format (MXF) — Operational pattern 1A (Single Item, Single Package)</p>
+<p>SMPTE ST 379-1:2009, Material Exchange Format (MXF) — MXF Generic Container</p>
+<p>SMPTE ST 379-2:2010, Television — Material Exchange Format (MXF) — MXF Constrained Generic Container</p>
+<p>SMPTE ST 381-2:2011, Material Exchange Format (MXF) — Mapping MPEG Streams into the MXF Constrained Generic Container</p>
+<p>SMPTE ST 382:2007, Material Exchange Format — Mapping AES3 and Broadcast Wave Audio into the MXF Generic Container</p>
+<p>SMPTE ST 385:2012, Material Exchange Format (MXF) — Mapping SDTI-CP Essence and Metadata into the MXF Generic Container</p>
+<p>SMPTE ST 400:2012, SMPTE Labels Structure</p>
+<p>SMPTE ST 436-1:2013, MXF Mappings for VI Lines and Ancillary Data Packet</p>
+<h1 id="terms-and-definitions">3 Terms and Definitions</h1>
+<div data-custom-style="smpte-hint">
+<p>The terms and definitions clause provide definitions necessary for the understanding of certain terms used in the document. See AG-16 clause 3.6 (Terms and Definitions), AG-16 clause 4.4 (Terms and Definitions), and ISO Directive Part 2 clause 16 (Terms and Definitions).</p>
+<p>Select one of the following sentences and delete the others:</p>
+</div>
+<p><span data-custom-style="smpte-ch-hint">a)</span> For the purposes of this document, the following terms and definitions apply:</p>
+<p><span data-custom-style="smpte-ch-hint">b)</span> For the purposes of this document, the terms and definitions given in [external reference(s)] apply.</p>
+<p><span data-custom-style="smpte-ch-hint">c)</span> For the purposes of this document, the terms and definitions given in [external reference(s)] and the following apply:</p>
+<p><span data-custom-style="smpte-ch-hint">d)</span> No terms and definitions are listed in this document.</p>
+<div data-custom-style="smpte-hint">
+<p>If sentence b) or d) is selected, nothing else appears in the Clause.</p>
+<p>If sentence a) or c) is selected, one or more terms is defined in the clauses immediately following.</p>
+<p>Your terms and definitions follow.</p>
+</div>
+<p>For the purposes of this document, the terms and definitions given in SMPTE ST 377-1 and SMPTE ST 379-2 apply.</p>
+<h1 id="mxf-file-structure-and-mapping">4 MXF File Structure and Mapping</h1>
+<h2 id="general">4.1 General</h2>
+<p>SMPTE ST-2117-10 MXF files specified by this document shall have one of the two structures illustrated in Figure 1 and Figure 2 respectively. <strong>HPP</strong> is an shorthand for Header Partition Pack, <strong>BPP</strong> is an shorthand for Body Partition Pack and <strong>FPP</strong> is a shorthand for Footer Partition Pack.</p>
+<p><img src="data:image/png;base64,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" /></p>
+<div data-custom-style="smpte-caption">
+<p>Figure 1 - Single Essence Location Style</p>
+</div>
+<p><img src="data:image/png;base64,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" /></p>
+<div data-custom-style="smpte-caption">
+<p>Figure 2 - Multiple Essence Location Style</p>
+</div>
+<h2 id="single-essence-location-style">4.2 Single Essence Location Style</h2>
+<p>As shown in Figure 1, this style consists of a Header Partition, a Footer Partition, and a Random Index Pack.</p>
+<p>The Index Table is placed prior to the Essence Container.</p>
+<p>Some of the aspects of this style are shown below.</p>
+<ul>
+<li>It is easy to handle because of a simple structure</li>
+<li>It is easy to edit while file transferring</li>
+<li>It is easy to select an extract, or a “Partial file”</li>
+</ul>
+<p>The following Index Layout Properties shall be set according to SMPTE ST 377-1.</p>
+<ul>
+<li>Index Table Segment::Single Index Location TRUE (Single Location)</li>
+<li>Index Table Segment::Single Location TRUE (Single Location)</li>
+<li>Index Table Segment::Forward Index Direction TRUE (Forward)</li>
+<li>Preface:: is RIP present TRUE</li>
+</ul>
+<h2 id="multiple-essence-location-style">4.3 Multiple Essence Location Style</h2>
+<p>As shown in Figure 2, this style consists of a Header Partition, segmented Body Partition(s), a Footer Partition, and a Random Index Pack. Each Body Partition carrying VC-6 data shall be followed by one Index Table Segment that carries the Index Entries for the Edit Units of that Body Partition.</p>
+<p>Some of the aspects of this style are shown below.</p>
+<ul>
+<li>It is only necessary to include one Index Table Segment for each Body Partition period on the sender side</li>
+<li>It is easy to perform the function “Play while receiving file” on the receiver side</li>
+<li>It is easy to select an extract, or a “Partial file”</li>
+</ul>
+<p>The following Index Layout Properties shall be set according to SMPTE ST 377-1.</p>
+<ul>
+<li>Index Table Segment::Single Index Location FALSE (Distributed Location)</li>
+<li>Index Table Segment::Single Essence Location FALSE (Distributed Location)</li>
+<li>Index Table Segment::Forward Index Direction FALSE (Backward)</li>
+<li>Preface:: is RIP present TRUE</li>
+<li>Essence Container Data:: Following Index Table TRUE (A Complete Index Table follows all Essence)</li>
+</ul>
+<h1 id="mapping-vc-6-bitstream-into-the-mxf-generic-container">5 Mapping VC-6 Bitstream into the MXF Generic Container</h1>
+<p>VC-6 streams shall be mapped using the MXF Generic Container using frame wrapping as defined in SMPTE ST 379-1 and SMPTE ST 379-2</p>
+<p>Figure 4 shows the SMPTE ST-2117 picture element, the bitstream shall comply with SMPTE ST-2117.</p>
+<p><img src="data:image/png;base64,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" /></p>
+<div data-custom-style="smpte-caption">
+<p>Figure 4 - Mapping of ST-2117 Picture Item Element</p>
+</div>
+<h1 id="key-length-value-encoding">6 Key Length Value Encoding</h1>
+<h2 id="picture-element-key">6.1 Picture Element Key</h2>
+<h3 id="smpte-st-2117-picture-element-key">6.1.1 SMPTE ST-2117 Picture Element Key</h3>
+<div data-custom-style="smpte-caption">
+<p>Table 1 - Picture Element Keys</p>
+</div>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 32%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Kind</th>
+<th>Item UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FrameWrappedVC6PictureElement</td>
+<td>LEAF</td>
+<td>urn:smpte:ul:060E2B34.01020101.0D010301.157f1f7f</td>
+</tr>
+</tbody>
+</table>
+<div data-custom-style="smpte-note">
+<p>NOTE: The table shows the <code>Item UL</code> in the SMPTE Metadata registers where <code>7f</code> in byte 16 is a placeholder for the Essence element number of the Element within the Picture Item.</p>
+</div>
+<p><code>FrameWrappedVC6PictureElement</code> key bytes 1-13 are defined in SMPTE ST 379-2.</p>
+<p><code>FrameWrappedVC6PictureElement</code> key byte 16 shall be set to 1.</p>
+<h3 id="smpte-st-2117-picture-element-length">6.1.2 SMPTE ST-2117 Picture Element Length</h3>
+<p>The length field of the KLV coded Element shall comply with SMPTE ST 379-2.</p>
+<h3 id="smpte-st-2117-picture-element-value">6.1.3 SMPTE ST-2117 Picture Element Value</h3>
+<p>Each Picture Element value shall be a bitstream for a single image compliant with SMPTE ST-2117-1.</p>
+<h1 id="mxf-labels">7 MXF Labels</h1>
+<h2 id="essence-container-label">7.1 Essence Container Label</h2>
+<p>The Essence Container Label is carried in the Essence Containers Properties of the Partition Packs, Preface Set and File Descriptor as defined in SMPTE ST 377-1.</p>
+<p>The values of the Essence Container Label for VC-6 bitstreams in MXF shall be one of the values in Table 2.</p>
+<div data-custom-style="smpte-caption">
+<p>Table 2 – Essence Container Label Values for VC-6</p>
+</div>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 34%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Kind</th>
+<th>Item UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MXFGCVC6BitstreamTypes</td>
+<td>NODE</td>
+<td>urn:smpte:ul:060e2b34.0401010d.0d010301.02240000</td>
+</tr>
+<tr class="even">
+<td>MXFGCVC6FrameWrappedGenericBitstream</td>
+<td>LEAF</td>
+<td>urn:smpte:ul:060e2b34.0401010d.0d010301.02240100</td>
+</tr>
+<tr class="odd">
+<td>MXFGCVC6FrameWrappedProgressivePictures</td>
+<td>LEAF</td>
+<td>urn:smpte:ul:060e2b34.0401010d.0d010301.02240200</td>
+</tr>
+<tr class="even">
+<td>MXFGCVC6FrameWrappedInterlacedPictures</td>
+<td>LEAF</td>
+<td>urn:smpte:ul:060e2b34.0401010d.0d010301.02240300</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>VC6FrameWrappedGenericbitstream</code> shall only be used in cases where neither <code>VC6FrameWrappedProgressivePictures</code> nor <code>VC6FrameWrappedInterlacedPictures</code> describe the Pictures that are VC-6 encoded.</p>
+<h2 id="picture-essence-coding-label">7.2 Picture Essence Coding Label</h2>
+<p>Labels intended for use as values for the Picture Essence Coding item of the Generic Picture Essence Descriptor, specified in SMPTE ST 377-1, are given in Table 3.</p>
+<div data-custom-style="smpte-caption">
+<p>Table 3 – Picture Essence Coding Label Values for VC-6</p>
+</div>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 31%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Kind</th>
+<th>Item UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VC6Bitstreams</td>
+<td>NODE</td>
+<td>urn:smpte:ul:060e2b34.0401010d.04010202.01470000</td>
+</tr>
+<tr class="even">
+<td>VC6UnrestrictedBitstream</td>
+<td>LEAF</td>
+<td>urn:smpte:ul:060e2b34.0401010d.04010202.01470100</td>
+</tr>
+</tbody>
+</table>
+<div data-custom-style="smpte-note">
+<p>NOTE The Picture Essence Coding item of the Generic Picture Essence Descriptor is intended to allow a decoder to fast-fail when processing the MXF file.</p>
+</div>
+<div data-custom-style="smpte-note">
+<p>NOTE The Public CD will start with no constrained bitstream flags. If requirements for constrained bitstreams arise during the Public CD phase, then we will add them to the table.</p>
+</div>
+<h1 id="vc6subdescriptor">8 <code>VC6SubDescriptor</code></h1>
+<p>A <code>VC6SubDescriptor</code> should be present for VC-6 content in MXF. The <code>VC6SubDescriptor</code> is strongly referenced from a CDCI Descriptor or RGBA Descriptor and has the properties shown in Table 4. [<strong>Req</strong>] indicates that a property is required.</p>
+<div data-custom-style="smpte-caption">
+<p>Table 4 - <code>VC6SubDescriptor</code> ULs</p>
+</div>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 55%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Register.Kind</th>
+<th>Item UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VC6Parameters</td>
+<td>Elements.NODE</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.00000000</td>
+</tr>
+<tr class="even">
+<td>VC6SubDescriptor</td>
+<td>Groups.LEAF</td>
+<td>urn:smpte:ul:060e2b34.027f0101.0d010101.01018104</td>
+</tr>
+<tr class="odd">
+<td>VC6EchelonProperties</td>
+<td>Groups.LEAF</td>
+<td>urn:smpte:ul:060e2b34.027f0101.0d010101.01018105</td>
+</tr>
+<tr class="even">
+<td>VC6GCUpsamplersBatch</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.01000000</td>
+</tr>
+<tr class="odd">
+<td>VC6ShortcutVectorsBatch</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.02000000</td>
+</tr>
+<tr class="even">
+<td>VC6Lossless</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.03000000</td>
+</tr>
+<tr class="odd">
+<td>VC6CBR</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.04000000</td>
+</tr>
+<tr class="even">
+<td>VC6Bitrate</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.05000000</td>
+</tr>
+<tr class="odd">
+<td>VC6CompressedFrameMax</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.06000000</td>
+</tr>
+<tr class="even">
+<td>VC6CompressedFrameAvg</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.07000000</td>
+</tr>
+<tr class="odd">
+<td>VC6MaxNoOfEchelons</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.08000000</td>
+</tr>
+<tr class="even">
+<td>VC6EchelonVector</td>
+<td>Elements.LEAF</td>
+<td>urn:smpte:ul:060e2b34.0101010e.0401060d.09000000</td>
+</tr>
+</tbody>
+</table>
+<div data-custom-style="smpte-caption">
+<p>Table 5 - Elements in the <code>VC6SubDescriptor</code></p>
+</div>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 28%" />
+<col style="width: 25%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>type</th>
+<th>Len</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VC6SubDescriptor</td>
+<td>Set UL</td>
+<td>16</td>
+<td>ST 2117 VC6 Sub-Descriptor</td>
+</tr>
+<tr class="even">
+<td>VC6GCUpsamplersBatch</td>
+<td>IDRefStrongReferenceSet</td>
+<td>8 + 16n</td>
+<td>Unordered Batch of UInt8 Upsampler Indices used in the Generic Container</td>
+</tr>
+<tr class="odd">
+<td>VC6ShortcutVectorsBatch</td>
+<td>IDRefStrongReferenceSet</td>
+<td>8 + 16n</td>
+<td>Unordered Batch of unique UInt16 ShortcutVector values used in the Generic Container</td>
+</tr>
+<tr class="even">
+<td>VC6Lossless</td>
+<td>UInt8</td>
+<td>1</td>
+<td>Non-zero if the encoder created a lossless bitstream</td>
+</tr>
+<tr class="odd">
+<td>VC6CBR</td>
+<td>UInt8</td>
+<td>1</td>
+<td>Non-zero if the encoder intended a constant bitrate stream</td>
+</tr>
+<tr class="even">
+<td>VC6Bitrate</td>
+<td>UInt64</td>
+<td>8</td>
+<td>Target CBR bitrate or Maximum VBR bitrate in bits per second</td>
+</tr>
+<tr class="odd">
+<td>VC6CompressedFrameMax</td>
+<td>UInt64</td>
+<td>8</td>
+<td>Maximum Size in bits of a Compressed Frame in the Generic Container</td>
+</tr>
+<tr class="even">
+<td>VC6CompressedFrameAvg</td>
+<td>UInt64</td>
+<td>8</td>
+<td>Average Size in bits of a Compressed Frame in the Generic Container</td>
+</tr>
+<tr class="odd">
+<td>VC6MaxNoOfEchelons</td>
+<td>UInt8</td>
+<td>1</td>
+<td>Maximum Number of Echelons in any Frame in the Generic Container</td>
+</tr>
+<tr class="even">
+<td>VC6EchelonVector</td>
+<td>Array of Strong Ref</td>
+<td>8 + 16n</td>
+<td>Specifies a vector of an ordered set of references to VC6EchelonProperties sets</td>
+</tr>
+</tbody>
+</table>
+<p>A zero value of <code>VC6CBR</code> shall indicate that <code>VC6Bitrate</code> represents the target CBR bitrate. A non-zero value shall indicate that <code>VC6Bitrate</code> represents the maximum bitrate value in bits per second for one frame period.</p>
+<div data-custom-style="smpte-note">
+<p>NOTE: <code>VC6ShortcutVectorsBatch</code> contains only unique values. In theory there are 65536 different permutations of ShortcutVector. In practice only a few are actually created by an encoder. This property can be used by a decoder to help determine the resources required for decoding the generic container.</p>
+</div>
+<div data-custom-style="smpte-caption">
+<p>Table 7 - Elements in the VC6EchelonProperties Set</p>
+</div>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 27%" />
+<col style="width: 24%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>type</th>
+<th>Len</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VC6EchelonProperties</td>
+<td>Set UL</td>
+<td>16</td>
+<td>Property identifiers for and Echelon in a VC-6 bitstream</td>
+</tr>
+<tr class="even">
+<td>VC6EchelonIndex</td>
+<td>UInt32</td>
+<td>4</td>
+<td>[Req] Signed Index of this Echelon as identified in ST 2117-1:2020 §4.8.9</td>
+</tr>
+<tr class="odd">
+<td>VC6SampledHeight</td>
+<td>UInt32</td>
+<td>4</td>
+<td>[Req] Sampled Height of the reconstructed pixel grid for the echelon</td>
+</tr>
+<tr class="even">
+<td>VC6SampledWidth</td>
+<td>UInt32</td>
+<td>4</td>
+<td>[Req] Sampled Width of the reconstructed pixel grid for the echelon</td>
+</tr>
+</tbody>
+</table>
+<h1 id="application-issues">9 Application Issues</h1>
+<h2 id="application-of-the-kag">9.1 Application of the KAG</h2>
+<p>MXF encoders and decoders shall comply with the KAG rules defined in SMPTE ST 377-1. The default value of the KAG is 1. Other KAG values may be used within the range defined by SMPTE ST 377-1.</p>
+<h2 id="index-tables-and-the-fill-item">9.2 Index Tables and the Fill Item</h2>
+<p>VC-6 coding is frame-based and the KLV fill item can be used to maintain a constant edit unit size for all frames.</p>
+<p>Where the application defines a constant edit unit size, an index table shall be used. This includes the cases where the VC-6 essence element is the sole essence component and where it is interleaved with other essence components.</p>
+<p>Where the application has a variable edit unit size an index table should be used wherever possible. SMPTE EG 377-3 illustrates the use of index tables for both mono and multi-essence mappings and for both constant and variable length edit unit sizes.</p>
+<h2 id="operational-pattern-usage">9.3 Operational Pattern Usage</h2>
+<p>This essence mapping may be used with any generalized operational pattern.</p>
+<div data-custom-style="smpte-note">
+<p>NOTE This does not preclude the use of specialized operational patterns.</p>
+</div>
+<h2 id="mapping-track-numbers-to-generic-container-elements">9.4 Mapping Track Numbers to Generic Container Elements</h2>
+<p>Each track number value for an essence element defined in this standard shall be derived as described in the MXF Constrained Generic Container specification (SMPTE ST 379-2).</p>
+<h2 id="essence-container-partitions">9.5 Essence Container Partitions</h2>
+<p>Frame wrapping maintains each content package of the generic container as a separate editable unit with the contents of the system, picture, sound and data items in synchronism. If a frame-wrapped essence container is partitioned, then individual content packages should not be fragmented by the partitioning process.</p>
+<div data-custom-style="smpte-note">
+<p>NOTE SMPTE ST 377-1:2019, Section 6.2.2 (Partition Rules Summary) summarizes the use of partitions in MXF files.</p>
+</div>
+<h2 id="mxf-header-metadata-property-values">9.6 MXF Header Metadata Property Values</h2>
+<p>The following restrictions apply to Picture Stream wrapped with this standard</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 28%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th style="text-align: left;">Progressive Pictures</th>
+<th style="text-align: left;">Interlaced Pictures</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bitstreams per KLV Element</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr class="even">
+<td>Frame Layout (ST 377-1 §G.2.1)</td>
+<td style="text-align: left;">0 (full_frame)</td>
+<td style="text-align: left;">1 (separate_fields) or 4 (segmented_frame)</td>
+</tr>
+<tr class="odd">
+<td>Sample Rate (ST 377-1 §G.2.2)</td>
+<td style="text-align: left;">Frame</td>
+<td style="text-align: left;">Frame</td>
+</tr>
+<tr class="even">
+<td>Edit Rate (ST 377-1 §B.12)</td>
+<td style="text-align: left;">Frame</td>
+<td style="text-align: left;">Frame</td>
+</tr>
+<tr class="odd">
+<td>Index Edit Rate (ST 377-1 §11.2.3)</td>
+<td style="text-align: left;">Frame</td>
+<td style="text-align: left;">Frame</td>
+</tr>
+<tr class="even">
+<td>Aspect Ratio (ST 377-1 §G.2.4)</td>
+<td style="text-align: left;">Frame</td>
+<td style="text-align: left;">Frame</td>
+</tr>
+</tbody>
+</table>
+<div data-custom-style="smpte-hint">
+<p><strong>Information for Document Editors (this page is to be deleted prior to FCD ballot)</strong></p>
+<p>The following documents have useful reference material for document editors. SMPTE AG 16:2018 – SMPTE Engineering Document Style Guidelines</p>
+<p>International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC), Directives, Part 2:2016-05, Principles and rules for the structure and drafting of ISO and IEC documents, 7.0</p>
+<p><strong>Warning</strong>: Only copy-and-paste plain text from other documents; otherwise this style set may be corrupted.</p>
+<p>The <code>refdoc</code> for this document type is usually <code>xr/refdocs/refdoc-smpte-eng.docx</code> unless you have used your own. There are samples of all the styles available.</p>
+<p>If you extend the document types with your own <code>refdoc</code>, the <strong>YOU MUST</strong> make Home Office aware, otherwise the styles may be lost during the Home Office pubishing process.</p>
+</div>
+</body>
+</html>

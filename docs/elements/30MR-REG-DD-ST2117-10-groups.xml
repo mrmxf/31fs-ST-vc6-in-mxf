@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Metadata tags to support XML file editing -->
-<!-- author= Bruce Devlin (bruce@mrmxf.com) -->
-<!-- summary_of_edit= Groups Register for ST 2117-10 VC-6 in MXF -->
-<!--  -->
-<!-- DO NOT EDIT THIS TAG -->
-<!-- master_commit_tag=v000000082 -->
-<!-- DO NOT EDIT THIS TAG -->
-<!--  -->
+<!--                                                                    -->
+<!-- Metadata tags to support XML file editing                          -->
+<!-- author= Bruce Devlin (bruce@mrmxf.com)                             -->
+<!-- summary_of_edit= Groups Register for ST 2117-10 VC-6 in MXF        -->
+<!--                                                                    -->
 
 <GroupsRegister xmlns="http://www.smpte-ra.org/ns/395/2016">
     <Entries>
@@ -16,8 +13,8 @@
             <Symbol>VC6SubDescriptor</Symbol>
             <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.01018104</UL><!-- FFV1 subdescriptor is ....03 -->
             <Kind>LEAF</Kind>
-            <Name>VC6 Sub-Descriptor</Name>
-            <Definition>ST 2117 VC6 Sub-Descriptor</Definition>
+            <Name>VC-6 Sub-Descriptor</Name>
+            <Definition>VC-6 Sub-Descriptor</Definition>
             <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
             <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.01015900</Parent>
@@ -68,11 +65,11 @@
             <Symbol>VC6EchelonProperties</Symbol>
             <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.01018105</UL>
             <Kind>LEAF</Kind>
-            <Name>ST 2117 VC6 Echelon Properties</Name>
-            <Definition>Property identifiers for and Echelon in a VC-6 bitstream</Definition>
-            <DefiningDocument>SMPTE ST 2117-1</DefiningDocument>
+            <Name>VC-6 Echelon Properties</Name>
+            <Definition>Properties that describe an Echelon in a VC-6 bitstream</Definition>
+            <DefiningDocument>SMPTE ST 2117-10</DefiningDocument>
             <IsDeprecated>false</IsDeprecated>
-            <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.01018104</Parent>
+            <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.01010100</Parent>
             <IsConcrete>true</IsConcrete>
             <KLVSyntax>06 53</KLVSyntax>
             <Contents>

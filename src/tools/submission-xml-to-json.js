@@ -25,26 +25,27 @@
  * 6. export MR.RS as register-submission.json
  * 7. export MR.RS.messages as register-submission-messages.json
  */
+const logPrefix = "SMPTE-xml2js-r1 "
 
 const fs = require('fs')
 const path = require('path')
 const xml2js = require('xml2js')
 
-const filename_prefix = "src/metadata/meta-"
-const tempname_prefix = "src/metadata/tmp-"
+const filenamePrefix = "src/metadata/meta-"
+const tempnamePrefix = "src/metadata/tmp-"
 
-const source_paths = [
+const sourcePaths = [
     "src/register/30MR-REG-DD-ST2117-10-elements.xml",
     "src/register/30MR-REG-DD-ST2117-10-essence.xml",
     "src/register/30MR-REG-DD-ST2117-10-groups.xml",
     "src/register/30MR-REG-DD-ST2117-10-labels.xml",
     "src/register/30MR-REG-DD-ST2117-10-types.xml",
 ]
-const types_paths = [
+const typesPaths = [
     "src/register/30MR-REG-DD-ST2117-10-types.xml",
     "src/metadata/Types-snapshot.xml",
 ]
-const groups_paths = [
+const groupsPaths = [
     "src/register/30MR-REG-DD-ST2117-10-groups.xml",
     "src/metadata/Groups-snapshot.xml",
 ]
@@ -73,7 +74,7 @@ const groups_paths = [
  *   }
  * }
  */
-function refactor_submission(submission, types) {
+function refactorSubmission(submission, types) {
     let document_substitution = {}
     for (register in submission) {
         //iterate trhough each entry adding an object to document_substitution
@@ -96,23 +97,25 @@ function refactor_submission(submission, types) {
     return document_substitution
 }
 
-function refactor_types(register_types) {
-    let map = {}
-    register_types.TypesRegister.Entries[0].Entry.forEach(type => {
-        map[type.UL[0]] = {
+function refactorTypes(registerTypes, typesMap) {
+    registerTypes.TypesRegister.Entries[0].Entry.forEach(type => {
+        //log a warning if duplicate type found
+        if (typesMap[type.UL[0]]) {
+            console.log(`${logPrefix} WARNING over-writing duplicate Type Definition: ${type.Symbol[0]}`)
+        }
+        typesMap[type.UL[0]] = {
             "Symbol": type.Symbol[0],
             "TypeSize": (type.TypeSize) ? type.TypeSize[0] : 0
         }
     })
-    return map
 }
 
 // do that parsing and file writing in parallel for speed
-async function xml_to_json_file(xml, types, destination_path) {
+async function xml2JsonFile(xml, xref, destination_path) {
     const parser = new xml2js.Parser()
     parser.parseStringPromise(xml)
         .then(result => {
-            let document_metadata = refactor_submission(result, types)
+            let document_metadata = refactorSubmission(result, xref.types)
             let document_json = JSON.stringify(document_metadata, undefined, 2)
             fs.writeFileSync(destination_path, document_json)
         })
@@ -121,33 +124,59 @@ async function xml_to_json_file(xml, types, destination_path) {
         })
 }
 
-// first read in the Types
-let types = {}
-types_paths.forEach(async types_path => {
-    let filepath = path.resolve(types_path)
-    let basename = path.basename(filepath)
-    let xml = fs.readFileSync(filepath)
+readXmlDocumentsToArray = (docPaths) => {
+    let arr = []
+    docPaths.forEach(docPath => {
+        let filePath = path.resolve(docPath)
+        let basename = path.basename(filePath)
+        arr.push(fs.readFileSync(filePath))
+    })
+    return arr
+}
 
-    const parser = new xml2js.Parser()
-    await parser.parseStringPromise(xml)
-        .then(result => {
-            types = refactor_types(result)
-            let destination_path = `${tempname_prefix}types-map.json`
-            fs.writeFileSync(destination_path, JSON.stringify(types, undefined, 2))
-        })
-        .then(result => {
-            //take all the source files and JSONify them
-            source_paths.forEach(source_path => {
-                let filepath = path.resolve(source_path)
-                let basename = path.basename(filepath)
-                let xml = fs.readFileSync(filepath)
-                let destination_path = `${filename_prefix}${basename}.json`
+createTypesMap = async (typesXmlArray) => {
+    const typesMap = {}
 
-                xml_to_json_file(xml, types, destination_path)
+    await typesXmlArray.forEach(async xmlDoc => {
+        const parser = new xml2js.Parser()
+        parser.parseStringPromise(xmlDoc)
+            .then(result => {
+                refactorTypes(result, typesMap)
+                let destination_path = `${tempnamePrefix}types-map.json`
+                fs.writeFileSync(destination_path, JSON.stringify(typesMap, undefined, 2))
             })
-        })
-        .catch(e => {
-            console.log(e.message)
-        })
+            .catch(e => {
+                console.log(e.message)
+            })
+    })
+    return typesMap
+}
 
-})
+
+buildXrefData = async (typesXmlArray, groupsXmlArray) => {
+    let typesMap = await createTypesMap(typesXmlArray)
+    let xrefData = { types: typesMap, groups: "" }
+    return xrefData
+}
+
+transformXmlIntoJson = async (typesXmlArray, groupsXmlArray) => {
+    let xref = await buildXrefData(typesXmlArray, groupsXmlArray)
+    let xrefPath = `${tempnamePrefix}xref.json`
+    fs.writeFileSync(xrefPath, JSON.stringify(xref, undefined, 2))
+
+    //take all the XML register source files and JSONify them
+    sourcePaths.forEach(source_path => {
+        let filepath = path.resolve(source_path)
+        let basename = path.basename(filepath)
+        let xml = fs.readFileSync(filepath)
+        let destination_path = `${filenamePrefix}${basename}.json`
+
+        xml2JsonFile(xml, xref, destination_path)
+    })
+}
+
+// first read in the Types & Groups
+const typesXmlArray = readXmlDocumentsToArray(typesPaths)
+const groupsXmlArray = readXmlDocumentsToArray(groupsPaths)
+
+transformXmlIntoJson(typesXmlArray, groupsXmlArray)
