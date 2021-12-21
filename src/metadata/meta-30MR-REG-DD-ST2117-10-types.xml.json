@@ -1,32 +1,29 @@
 {
-  "VC6SubDescriptorEchelonStrongReferenceVector": {
+  "VC6EchelonPropertiesStrongReference": {
     "Register": "Types",
     "NamespaceName": "http://www.smpte-ra.org/reg/2003/2012",
-    "Symbol": "VC6SubDescriptorEchelonStrongReferenceVector",
-    "UL": "urn:smpte:ul:060e2b34.01040101.05060e01.00000000",
+    "Symbol": "VC6EchelonPropertiesStrongReference",
+    "UL": "urn:smpte:ul:060e2b34.01040101.05023200.00000000",
     "Kind": "LEAF",
-    "Name": "VC6 SubDescriptor Echelon Strong Reference Vector",
-    "DefiningDocument": "SMPTE 330M",
+    "Name": "VC-6 Echelon Properties Strong Reference",
+    "DefiningDocument": "ST 2117-10",
+    "IsDeprecated": "false",
+    "ContextScope": "UnknownContext",
+    "TypeKind": "StrongReference",
+    "BaseType": "urn:smpte:ul:060e2b34.027f0101.0d010101.01018105"
+  },
+  "VC6EchelonPropertiesStrongReferenceArray": {
+    "Register": "Types",
+    "NamespaceName": "http://www.smpte-ra.org/reg/2003/2012",
+    "Symbol": "VC6EchelonPropertiesStrongReferenceArray",
+    "UL": "urn:smpte:ul:060e2b34.01040101.05061000.00000000",
+    "Kind": "LEAF",
+    "Name": "VC-6 Echelon Properties Strong Reference in an ordered Array",
+    "DefiningDocument": "ST 2117-10",
     "IsDeprecated": "false",
     "ContextScope": "UnknownContext",
     "TypeKind": "VariableArray",
     "BaseType": "urn:smpte:ul:060e2b34.01040101.05021c00.00000000",
     "TypeQualifiers": "isOrdered"
-  },
-  "VC6EchelonPropertiesStrongReferenceVector": {
-    "Register": "Types",
-    "NamespaceName": "http://www.smpte-ra.org/reg/2003/2012",
-    "Symbol": "VC6EchelonPropertiesStrongReferenceVector",
-    "UL": "urn:smpte:ul:060e2b34.01040101.05061000.00000000",
-    "Kind": "LEAF",
-    "Name": "KLVDataDefinitionStrongReferenceSet",
-    "Applications": "AAF[1.1:]",
-    "DefiningDocument": "SMPTE 330M",
-    "IsDeprecated": "false",
-    "ContextScope": "UnknownContext",
-    "TypeKind": "Set",
-    "TypeSize": "0",
-    "BaseType": "urn:smpte:ul:060e2b34.01040101.05022000.00000000",
-    "TypeQualifiers": "isIdentified"
   }
 }
