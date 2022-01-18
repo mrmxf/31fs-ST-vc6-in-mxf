@@ -12,7 +12,7 @@ z-*.*
 #ignore the external resources folder by default
 x-r/**
 xr/**
-zmp/
+# do not ignore the submodule folder fo proper operation
 
 # ignore any secrets in environment variables
 .env

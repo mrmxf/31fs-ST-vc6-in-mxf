@@ -135,7 +135,6 @@
             <IsDeprecated>false</IsDeprecated>
             <ContextScope>DefinedContext</ContextScope>
             <Type>urn:smpte:ul:060e2b34.01040101.05061000.00000000</Type>
-                               060e2b34.01040101.05023200.00000000
             <ValueLength>Variable</ValueLength>
         </Entry>
         <Entry>
