@@ -1,6 +1,3 @@
 [submodule "xr"]
 	path = xr
 	url = https://github.com/mrmxf/md-publish.git
-[submodule "zmp"]
-	path = zmp
-	url = https://github.com/mrmxf/md-publish
