@@ -31,7 +31,7 @@
     "Symbol": "VC6ShortcutBitvectorBatch",
     "UL": "urn:smpte:ul:060e2b34.0101010e.0401060d.02000000",
     "Kind": "LEAF",
-    "Name": "VC-6 Shortcut Bitector Batch",
+    "Name": "VC-6 Shortcut Bitvector Batch",
     "Definition": "Unordered Batch of unique UInt16 ShortcutBitvector values used in the Generic Container",
     "DefiningDocument": "SMPTE ST 2117-10",
     "IsDeprecated": "false",

@@ -1,8 +1,9 @@
 # `VC6SubDescriptor`
 
-A `VC6SubDescriptor` should be present for VC-6 content in MXF. The
-`VC6SubDescriptor` is strongly referenced from a CDCI Descriptor or RGBA
-Descriptor and has the properties shown in Table 4.
+A `VC6SubDescriptor` should be present for VC-6 content in MXF, even if all the
+optional properties are omitted. The `VC6SubDescriptor` is strongly referenced
+from a CDCI Descriptor or RGBA Descriptor and has the properties shown in
+Table 4.
 
 ::: {custom-style="smpte-caption"}
 Table 4 - `VC6SubDescriptor` ULs
