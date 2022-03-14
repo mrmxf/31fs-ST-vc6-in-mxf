@@ -1,47 +1,52 @@
-# SEE: src-imf/metadata/document-metadata-imf.json
+# Title: imf-reg-api
+# Author: Bruce Devlin
+# Defaults: DOCX (smpte)
 
 # all file paths are relative to the root folder of the project
 # change this at your peril - the scripts might stop working
 
+
 metadata:
   mustache:
-    - src-imf/metadata/meta-30MR-REG-DD-ST2117-10-types.xml.json
-    - src-imf/metadata/meta-30MR-REG-DD-ST2117-10-groups.xml.json
-    - src-imf/metadata/meta-30MR-REG-DD-ST2117-10-elements.xml.json
-    - src-imf/metadata/meta-30MR-REG-DD-ST2117-10-essence.xml.json
-    - src-imf/metadata/meta-30MR-REG-DD-ST2117-10-labels.xml.json
-    - src-imf/metadata/document-metadata-imf.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-types.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-groups.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-elements.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-essence.xml.json
+    - src/metadata/meta-30MR-REG-DD-ST2117-10-labels.xml.json
+    - src/metadata/VC-6-mxf-document-metadata.json
 
 from: markdown
-to: docx
+to: html
 
 reference-doc: zmp/refdoc/refdoc-smpte-eng.docx
 
-output-file:  docs/vc6-imf.docx
+output-file:  html/vc6-mxf.html
 input-files:
   - zmp/boilerplate/smpte/inc-draft-st-000-title-block.md
   - zmp/boilerplate/smpte/inc-draft-st-002-foreword.md
   - zmp/boilerplate/smpte/inc-draft-st-005-introduction.md
 
-  - src-imf/005-introduction.md
+  - src/005-introduction.md
   - zmp/boilerplate/smpte/inc-draft-st-006-ipr-statement.md
   - zmp/boilerplate/smpte/inc-draft-st-010-scope-heading.md
 
-  - src-imf/010-scope.md
+  - src/010-scope.md
   - zmp/boilerplate/smpte/inc-draft-st-020-normative-references-heading.md
 
-  - src-imf/020-normative-references.md
+  - src/020-normative-references.md
   - zmp/boilerplate/smpte/inc-draft-st-030-terms-and-definitions-heading.md
 
-  - src-imf/030-terms-definitions.md
-  - src-imf/040-vc6-in-imf.md
-  - src-imf/050-vc6-image-essence.md
-  - src-imf/060-track-files.md
-  - src-imf/070-composition.md
+  - src/030-terms-definitions.md
+  - src/040-MXF-file-structure.md
+  - src/050-mapping-VC-6.md
+  - src/060-klv-encoding.md
+  - src/070-labels.md
+  - src/080-essence-descriptor.md
+  - src/090-application-issues.md
 
   - zmp/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
 # paths to search for images
-resource-path: [".", "src-imf", "zmp/boilerplate/smpte"]
+resource-path: [".", "src", "zmp/boilerplate/smpte"]
 
 # filters are needed for this document
 # - pandoc-lustache    - substitutes metadata into {{mustaches}}
