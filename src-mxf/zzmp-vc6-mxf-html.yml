@@ -16,11 +16,11 @@ metadata:
     - src/metadata/VC-6-mxf-document-metadata.json
 
 from: markdown
-to: docx
+to: html
 
 reference-doc: zmp/refdoc/refdoc-smpte-eng.docx
 
-output-file:  docs/vc6-mxf.docx
+output-file:  html/vc6-mxf.html
 input-files:
   - zmp/boilerplate/smpte/inc-draft-st-000-title-block.md
   - zmp/boilerplate/smpte/inc-draft-st-002-foreword.md

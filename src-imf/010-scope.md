@@ -1,0 +1,3 @@
+This document specifies a new IMF Application as a specialization of the IMF Framework to noproxy workflow using the hierarchical properties of VC-6 to create workflow efficiencies through layered storage and transport whilst retaining the auditing and versioninng capabilities of IMF.
+
+The new IMF Application targets UHDTV and larger images that are encoded using SMPTE ST 2117-1 with multiple echelons and bitrates that deliver visually lossless and mathematically lossless storage.

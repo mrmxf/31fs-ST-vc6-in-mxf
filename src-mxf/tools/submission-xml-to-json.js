@@ -31,23 +31,23 @@ const fs = require('fs')
 const path = require('path')
 const xml2js = require('xml2js')
 
-const filenamePrefix = "src/metadata/meta-"
-const tempnamePrefix = "src/metadata/tmp-"
+const filenamePrefix = "src-mxf/metadata/meta-"
+const tempnamePrefix = "src-mxf/metadata/tmp-"
 
 const sourcePaths = [
-    "src/register/30MR-REG-DD-ST2117-10-elements.xml",
-    "src/register/30MR-REG-DD-ST2117-10-essence.xml",
-    "src/register/30MR-REG-DD-ST2117-10-groups.xml",
-    "src/register/30MR-REG-DD-ST2117-10-labels.xml",
-    "src/register/30MR-REG-DD-ST2117-10-types.xml",
+    "src-mxf/register/30MR-REG-DD-ST2117-10-elements.xml",
+    "src-mxf/register/30MR-REG-DD-ST2117-10-essence.xml",
+    "src-mxf/register/30MR-REG-DD-ST2117-10-groups.xml",
+    "src-mxf/register/30MR-REG-DD-ST2117-10-labels.xml",
+    "src-mxf/register/30MR-REG-DD-ST2117-10-types.xml",
 ]
 const typesPaths = [
-    "src/register/30MR-REG-DD-ST2117-10-types.xml",
-    "src/metadata/Types-snapshot.xml",
+    "src-mxf/register/30MR-REG-DD-ST2117-10-types.xml",
+    "src-mxf/metadata/Types-snapshot.xml",
 ]
 const groupsPaths = [
-    "src/register/30MR-REG-DD-ST2117-10-groups.xml",
-    "src/metadata/Groups-snapshot.xml",
+    "src-mxf/register/30MR-REG-DD-ST2117-10-groups.xml",
+    "src-mxf/metadata/Groups-snapshot.xml",
 ]
 
 /** refactor the entry XML to a JSON that's suitable for substitution
