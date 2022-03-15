@@ -10,7 +10,7 @@ metadata:
     - src-imf/metadata/meta-30MR-REG-DD-ST2117-10-elements.xml.json
     - src-imf/metadata/meta-30MR-REG-DD-ST2117-10-essence.xml.json
     - src-imf/metadata/meta-30MR-REG-DD-ST2117-10-labels.xml.json
-    - src-imf/metadata/document-metadata-imf.json
+    - src-imf/document-metadata-imf.json
 
 from: markdown
 to: docx
@@ -35,9 +35,8 @@ input-files:
 
   - src-imf/030-terms-definitions.md
   - src-imf/040-vc6-in-imf.md
-  - src-imf/050-vc6-image-essence.md
-  - src-imf/060-track-files.md
-  - src-imf/070-composition.md
+  - src-imf/050-track-files.md
+  - src-imf/060-composition.md
 
   - zmp/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
 # paths to search for images

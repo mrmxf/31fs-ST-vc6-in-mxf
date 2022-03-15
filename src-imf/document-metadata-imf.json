@@ -8,9 +8,9 @@
   "role":"Document Editor",
   "version": "r1",
   "smpte": {
-    "TC": "TC-31FS",
+    "TC": "TC-35PM",
     "group": {
-      "name": "DG-VC-6-MXF",
+      "name": "DG-VC6-IMF",
       "chair": "Bruce Devlin",
       "editor": "Bruce Devlin"
     },
@@ -18,17 +18,17 @@
       "short": "ST",
       "long": "SMPTE STANDARD"
     },
-    "number": "2117",
+    "number": "2067",
     "year": "2021",
-    "part": "10",
+    "part": "xxx",
     "element": "",
-    "reference": "ST 2117-10:202x",
+    "reference": "ST 2067-xxx:202x",
     "state": "WD",
-    "title": "Mapping VC-6 into the MXF Generic Container",
-    "date": "2020-08-11T00:00:00.000Z",
-    "note": "r1-draft",
+    "title": "Mapping VC-6 into IMF",
+    "date": "2022-03-14T00:00:00.000Z",
+    "note": "r0-draft",
     "revision_topics_list": " "
   },
-  "title": "VC-6 in MXF",
+  "title": "VC-6 in IMF",
   "Caption":"dummy"
 }
