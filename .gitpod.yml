@@ -4,3 +4,11 @@ tasks:
          sudo gitmodule init
          sudo gitmodule update
          sudo dpkg -i ./zmp/tools/pandoc-amd64.deb
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint            # lint javascript code
+    - piersdeseilligny.betterfountain   # screen writer plugin
+    - stkb.rewrap                       # wrap markdown at column boundaries
+    - ms-toolsai.jupyter                # jupyter notebook support
+    - mads-hartmann.bash-ide-vscode     # bash scripting helper
