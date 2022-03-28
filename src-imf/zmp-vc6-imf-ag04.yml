@@ -36,6 +36,10 @@ input-files:
   - src-imf/030-terms-definitions.md
   - src-imf/040-vc6-in-imf.md
   - src-imf/050-track-files.md
+  - src-imf/051-track-file-descriptor.md
+  - src-imf/052-rgba-descriptor.md
+  - src-imf/053-cdci-descriptor.md
+  - src-imf/054-vc6-subdescriptor.md
   - src-imf/060-composition.md
 
   - zmp/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
