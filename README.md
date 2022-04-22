@@ -8,16 +8,16 @@ Mapping VC-6 (**SMPTE ST 2117-1**) into MXF as document **SMPTE ST 2117-10**
 2. open this repo with gitpod by opening a browser with this url:
   `gitpod.io/#https://github.com/mrmxf/31fs-ST-vc6-in-mxf`
 3. open up a terminal window (Ctrl+Shift+`)
-4. Type `git submodule init`
-4. Type `git submodule update`
-5. Type `yarn`
+4. Type `clog Update`
+5. Type `zmp Update`
+6. Type `yarn`
 
 Periodically, you may have to re-install pandoc
 
-* `sudo dpkg -i ./zmp/tools/pandoc-amd64.deb`
+* `zmp tools`
 
-You're good to go. Type `zmp/do --help` and don't forget to regularly commit
-your work to the github repo if you want to keep it.
+You're good to go. Type `zmp` and select an option. Ddon't forget to regularly
+commit your work to the github repo if you want to keep it.
 
 ## Offline Installation
 

@@ -5,6 +5,7 @@ tmp-*
 tmp-*.*
 z-*
 z-*.*
+clogrc/core/*
 
 #ignore temporary word documents
 ~*.*

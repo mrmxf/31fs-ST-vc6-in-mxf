@@ -1,9 +1,13 @@
+#               __
+#  __ __  __   / /
+#  \ V / / _| / _ \
+#   \_/  \__| \___/
+
 tasks:
-   - name: install pandoc
-     command: |
-         sudo gitmodule init
-         sudo gitmodule update
-         sudo dpkg -i ./zmp/tools/pandoc-amd64.deb
+   - name: cloggy
+     before:  bash clogrc/gitpod/tasks.sh before
+     init:    bash clogrc/gitpod/tasks.sh init
+     command: bash clogrc/gitpod/tasks.sh command
 
 vscode:
   extensions:
