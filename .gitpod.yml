@@ -5,9 +5,14 @@
 
 tasks:
    - name: cloggy
-     before:  bash clogrc/gitpod/tasks.sh before
-     init:    bash clogrc/gitpod/tasks.sh init
-     command: bash clogrc/gitpod/tasks.sh command
+     before:  clogrc/gitpod-tasks.sh before
+     init:    clogrc/gitpod-tasks.sh init
+     command: clogrc/gitpod-tasks.sh command
+
+# port for preview server
+ports:
+  - port: 3000
+    onOpen: open-browser
 
 vscode:
   extensions:
@@ -15,4 +20,6 @@ vscode:
     - piersdeseilligny.betterfountain   # screen writer plugin
     - stkb.rewrap                       # wrap markdown at column boundaries
     - ms-toolsai.jupyter                # jupyter notebook support
+    - ms-toolsai.jupyter-keymap         # jupyter notebook support
+    - ms-toolsai.jupyter-renderers      # jupyter notebook support
     - mads-hartmann.bash-ide-vscode     # bash scripting helper

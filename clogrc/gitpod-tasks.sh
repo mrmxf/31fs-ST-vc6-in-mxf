@@ -1,11 +1,11 @@
+# usage> Gitpod [ before | init | command ]
+# short> execute a gitpod boot command from the CLI
+# long>  execute a gitpod boot command from the CLI
 #               __
 #  __ __  __   / /
 #  \ V / / _| / _ \
 #   \_/  \__| \___/
 #
-# This script is called by gitpod.yml in one of its phases
-# Usage
-#  bash clogrc/gitpod/gitpod-tasks.sh [before | init | command]
 
 source $GITPOD_REPO_ROOT/clogrc/core/mm-core-inc.sh
 if [[ $1 == "" ]] ; then   echo -e "$cE Error$cT specify$cC before$cT |$cC init$cT |$cC command$cX" ; fi
