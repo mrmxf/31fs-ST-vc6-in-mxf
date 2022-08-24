@@ -8,7 +8,13 @@
 #
 
 source $GITPOD_REPO_ROOT/clogrc/core/mm-core-inc.sh
-if [[ $1 == "" ]] ; then   echo -e "$cE Error$cT specify$cC before$cT |$cC init$cT |$cC command$cX" ; fi
+case $1 in
+  "before")   ACTION="before" ;;
+  "init")     ACTION="init" ;;
+  "command")  ACTION="command" ;;
+  *)          echo -e "$cW Warning$cT specify$cC before$cT |$cC init$cT | command. Using default $cC before$cX"
+              ACTION="before" ;;
+esac
 
 # ------------------------------------------------------------------------------
 #   ___   ___   ___    ___    ___   ___
@@ -16,7 +22,7 @@ if [[ $1 == "" ]] ; then   echo -e "$cE Error$cT specify$cC before$cT |$cC init$
 #  | _ \ | _|  | _|  | (_) | |   / | _|
 #  |___/ |___| |_|    \___/  |_|_\ |___|
 # ------------------------------------------------------------------------------
-if [[ $1 == "before" ]] ; then
+if [[ $ACTION == "before" ]] ; then
 
   echo -e "${Cgreen}gitpod$cC BEFORE$cT tasks"
 
@@ -24,17 +30,24 @@ if [[ $1 == "before" ]] ; then
   PATH="$PATH:$(yarn global bin)"
   echo "PATH=\"$PATH\"" >> ~/.bashrc
 
-  fnInfo "$cC  zmp$cT update"
-  sudo wget --quiet --output-document=/usr/local/bin/zmp  https://mrmxf.com/get/zmp  ; sudo chmod +x /usr/local/bin/zmp
+   fnInfo "$cC  zmp$cT update"
+   sudo curl https://mrmxf.com/get/zmp  -o /usr/local/bin/zmp  ; sudo chmod +x /usr/local/bin/zmp
 
   fnInfo "$cC clog$cT update"
-  sudo wget --quiet --output-document=/usr/local/bin/clog https://mrmxf.com/get/clog ; sudo chmod +x /usr/local/bin/clog
+  curl --no-progress-meter https://mrmxf.com/get/clogbin | bash
 
   fnInfo "$cC  aws$cT cli install"
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
+  curl --no-progress-meter "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
   unzip -q -o /tmp/awscliv2.zip -d /tmp
   sudo /tmp/aws/install
 
+#   fnInfo "$cC  cuttlebelle"
+#   yarn global add cuttlebelle
+
+  fnDivider
+
+  fnInfo "Your public IP address in $cW $(curl --no-progress-meter https://api.ipify.org?format=text)$cX"
+  
   fnDivider
 
 fi
@@ -46,7 +59,7 @@ fi
 #  |___| |_|\_| |___|   |_|
 # ------------------------------------------------------------------------------
 
-if [[ $1 == "init" ]] ; then
+if [[ $ACTION == "init" ]] ; then
 
   echo -e "${Cgreen}gitpod$cC INIT$cT tasks"
   fnDivider
@@ -60,7 +73,7 @@ fi
 #   \___|  \___/  |_|  |_| |_|  |_| /_/ \_\ |_|\_| |___/
 # ------------------------------------------------------------------------------
 
-if [[ $1 == "command" ]] ; then
+if [[ $ACTION == "command" ]] ; then
 
   echo -e "${Cgreen}gitpod$cC COMMAND$cT tasks"
   fnDivider
